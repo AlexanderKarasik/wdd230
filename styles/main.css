@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+body {
+  max-width: 760px;
+  margin: 0 auto;
+  line-height: 2;
+  font-size: 20px;
+  border-radius: 20px;
+  border: solid black 2px;
+}
+
+header {
+  border-radius: 20px 20px 0 0;
+  border: solid black 2px;
+  background-color: black;
+  display: flex;
+  color: white;
+  margin: -1px;
+}
+
+img {
+  margin: 20px;
+  margin-bottom: 6px;
+  box-shadow: 0 0 7px 7px rgb(174, 174, 206);
+  border-radius: 5px;
+}
+
+h1 {
+  margin: auto;
+  color: floralwhite;
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  margin: 20px;
+  border-bottom: grey 2px solid;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+li {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  border-bottom: grey 2px solid;
+  padding-bottom: 20px;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+footer {
+  text-align: center;
+  font-size: 22px;
+  background-color: black;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 15px;
+  line-height: 1.5;
+  border-radius: 0 0 20px 20px;
+  border: solid black 2px;
+  margin: -1px;
+
+}
+
+#updates {
+  font-size: 20px;
+  color: rgb(255, 199, 192);
+}
