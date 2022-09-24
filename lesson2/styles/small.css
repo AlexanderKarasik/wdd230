@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+body{
+    font-family: "Arial", sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+main {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 0.5rem;
+  line-height: 1.5;
+  border: solid black 2px;
+  margin: -1px;
+  margin-top: 0.5em;
+}
+
+main span {
+  display: block;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+main p {
+  padding: 0.5rem;
+}
+
+main section {
+  border: solid gray 1px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  background-color: gainsboro;
+}
+
+#updates {
+  color: rgb(255, 199, 192);
+}
+
+h3 {
+  background-color: gray;
+  color: white;
+  padding: 0.7rem;
+  margin-top: auto;
+  border-radius: 5px 5px 0 0;
+  margin: -1px;
+}
+
+img {
+  margin-top: -40px;
+  margin-bottom: 0px;
+}

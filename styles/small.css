@@ -10,17 +10,15 @@ body {
 }
 
 header {
-  border-radius: 20px 20px 0 0;
   border: solid black 2px;
   background-color: black;
-  display: flex;
   color: white;
   margin: -1px;
+  text-align: center;
 }
 
 img {
-  margin: 20px;
-  margin-bottom: 6px;
+  margin-top:30px;
   box-shadow: 0 0 7px 7px rgb(174, 174, 206);
   border-radius: 5px;
 }
@@ -29,12 +27,12 @@ h1 {
   margin: auto;
   color: floralwhite;
   font-family: "Permanent Marker", cursive;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   margin: 20px;
   border-bottom: grey 2px solid;
   text-shadow: 2px 2px 4px #000000;
@@ -59,7 +57,6 @@ footer {
   font-family: "Open Sans", sans-serif;
   padding: 15px;
   line-height: 1.5;
-  border-radius: 0 0 20px 20px;
   border: solid black 2px;
   margin: -1px;
 
