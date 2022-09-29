@@ -66,3 +66,15 @@ footer {
   font-size: 20px;
   color: rgb(255, 199, 192);
 }
+
+li a{
+  color: blue;
+  text-decoration: none;
+  background: linear-gradient(2deg, transparent, rgb(240, 112, 95), transparent) bottom /
+		var(--d, 0) 2px no-repeat;
+	transition: 0.5s;
+}
+
+li a:hover {
+  --d: 100%;
+}
