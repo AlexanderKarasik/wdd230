@@ -1,0 +1,14 @@
+img {
+  width: 200px;
+}
+
+@media only screen and (min-width: 32.5em) {
+  img {
+    width: 500px;
+  }
+
+  p {
+    margin: 3em;
+    margin-top: 2em;
+  }
+}

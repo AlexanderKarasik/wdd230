@@ -1,0 +1,57 @@
+img {
+  margin: auto;
+}
+
+.description {
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+}
+
+#first {
+  padding-bottom: 0.7em;
+  margin-bottom: 1.15em;
+  border-bottom: solid 1px rgb(166, 165, 165);
+}
+
+#second {
+  margin-bottom: 0.7em;
+}
+
+ul {
+  text-align: left;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 32.5em) {
+  .description {
+    text-align: left;
+  }
+
+  .personas {
+    max-width: 750px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+
+  .bruce_img {
+    grid-column: 2/3;
+  }
+
+  .bruce_description {
+    grid-column: 1/2;
+    margin-top: -300px;
+  }
+
+  .scenarios {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  ul {
+    grid-column: 2/6;
+  }
+}
