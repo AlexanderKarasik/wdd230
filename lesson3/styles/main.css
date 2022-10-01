@@ -79,6 +79,17 @@ h3 {
   margin-right: -1px;
 }
 
+.typography{
+  margin-bottom: -3em;
+  
+}
+p{
+  padding-top:1em;
+  padding-left:1em;
+  padding-right:1em;
+  padding-bottom:1em;
+}
+
 @media only screen and (min-width: 32.5em) {
   nav ul {
     display: flex;

@@ -9,6 +9,10 @@ img {
 
   p {
     margin: 3em;
-    margin-top: 2em;
+    margin-top: 1.5em;
+  }
+
+  .img{
+    margin-top: -1em;
   }
 }
