@@ -79,6 +79,10 @@ h3 {
   margin-right: -1px;
 }
 
+h4{
+  font-weight: 400;
+}
+
 .typography{
   margin-bottom: -3em;
   
@@ -110,5 +114,10 @@ p{
     margin-right: 4em;
     margin-bottom: -0.3em;
     padding-bottom: 0.1em;
+  }
+
+  header{
+    padding: 5px;
+    margin-bottom: -15px;
   }
 }
