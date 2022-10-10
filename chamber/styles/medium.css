@@ -14,7 +14,7 @@
     width:40px;
    float:right;
     margin-right: 85px;
-    margin-top:-58px;
+    margin-top:-60px;
     
 }
 
@@ -22,7 +22,7 @@
     width:40px;
    float:right;
     margin-right: 135px;
-    margin-top:-58px;
+    margin-top:-60px;
 }
 
 body{
@@ -162,6 +162,14 @@ main{
 
 main section{
     margin: 0 10px 0 10px;
+}
+
+#banner img{
+    margin-top:0px;
+}
+
+#banner{
+    margin-top:0px;
 }
 }
 

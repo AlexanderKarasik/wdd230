@@ -14,7 +14,15 @@ nav, footer, main{
     background-color: white;
     margin-top: .9rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100; 
+    font-weight: 300; 
+}
+
+#banner img{
+    margin-top:-5px;
+}
+
+#banner{
+    margin-top:-10px;
 }
 
 .logo{
@@ -65,7 +73,7 @@ nav ul.open{
 
 #hamburgerBtn{
     float: right;
-    margin-top: -3.9rem;
+    margin-top: -3.8rem;
     justify-self: right;
     width: 30px;
     height:30px;
