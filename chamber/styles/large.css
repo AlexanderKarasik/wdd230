@@ -33,7 +33,7 @@
     }
 
     nav ul li a:hover{
-        color:#0e15d6;
+        color:#1a5e83;
     }
 
     .logo{
@@ -94,7 +94,8 @@
         margin-top: 22px;
     }
     #info{
-        padding:0.8em;    
+        padding:0.8em;  
+        margin-top:10px;  
     }
     
     #info h2{
