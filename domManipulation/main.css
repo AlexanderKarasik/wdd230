@@ -34,6 +34,11 @@ button {
 	font-size: 1.1rem;
 }
 
+ul li button{
+    padding-bottom: 3px;
+    padding-left: 6px;
+}
+
 input {
 	width: 200px;
 }
