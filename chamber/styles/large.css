@@ -139,7 +139,7 @@
 
     #spotlights{
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto;
         grid-area: 1/4/4/5;
         margin-left: 0px;
         padding-bottom: 0px;
@@ -149,17 +149,17 @@
 
     #spotlight3{
         display:block;
-        grid-row: 3/4;
+        /* grid-row: 3/4; */
     }
 
     #spotlight2{
         display:block;
-        grid-row: 2/3;
+        /* grid-row: 2/3; */
     }
 
     #spotlight1{
         display:block;
-        grid-row: 1/2;
+        /* grid-row: 1/2; */
     }
     
 
