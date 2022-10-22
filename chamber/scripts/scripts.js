@@ -7,7 +7,7 @@ x.onclick = toggleMenu;
 
 const d = new Date();
 const year = d.getFullYear();
-console.log(year);
+// console.log(year);
 document.getElementById("year").innerHTML = year;
 let lastmodif = new Date(document.lastModified);
 const options = {

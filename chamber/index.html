@@ -8,7 +8,7 @@
     <meta
       name="description"
       content="Chamber Home Page Build in WDD 230">
-    <link href="styles/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
     <link href="styles/large.css" rel="stylesheet">
@@ -22,7 +22,7 @@
     <header>
         <div class="logo">
             <img
-              src="images/logo.png"
+              src="images/logo.webp"
               alt="Logo image"
               width="150" 
               
@@ -55,9 +55,13 @@
     <!-- MAIN GOES HERE -->
     <main>
         <section id="hero">
-
-            <img src="images/hero1.jpg" alt="hero image" width="100%" height="100%">
+            <picture>
+            <!-- <img src="images/hero1.jpg" alt="hero image" width="100%" height="100%"> -->
+                <source media="(max-width: 500px)" srcset="images/small1.jpg">
+                <source media="(max-width: 1023px)" srcset="images/medium1.jpg">
+                <img src = "images/large1.jpg" width="100%" height="100%" alt="hero image">
             <div id="button"><button>JOIN THE CHAMBER</button></div>
+        </picture>
         </section>
 
         <section id="event">
@@ -74,13 +78,13 @@
         <section id="weather">
             <h2>Weather</h2>
             <div class="temp"><img src="images/weather.png" alt="weather logo" width="80">
-            <p>33℃</p></div>
+            <p><span id="theInputTemp">9</span> ℃</p></div>
             <p id="cloudy">Partly Cloudy</p>
             <div class="weatherGrid">
                 <p >Wind Speed:</p>
-                <p>2.5 km/h</p> 
+                <p><span id="windspeed">15</span>km/h</p> 
                 <p>Wind Chill:</p>
-                <p>N/A</p>
+                <p><span class="windchill"></span></p>
             </div>
         </section>
 
@@ -130,7 +134,7 @@
             <div class="left">
         <div>
             <img
-            src="images/logo.png"
+            src="images/logo.webp"
             alt="Logo image"
             width="150"> 
         </div>
@@ -179,10 +183,9 @@
             Last Updated: <span id="lastupdate2"></span> <span id="time2"></span>
         </span>
       </div>
-
-      <script src="scripts/main.js"></script>
+   
     </footer>
-
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/scripts.js"></script>
   </body>
   </html>
