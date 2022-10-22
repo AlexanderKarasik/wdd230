@@ -78,13 +78,13 @@
         <section id="weather">
             <h2>Weather</h2>
             <div class="temp"><img src="images/weather.png" alt="weather logo" width="80">
-            <p><span id="theInputTemp">9</span> ℃</p></div>
+            <p><input id="theInputTemp" type="text"> ℃</p></div>
             <p id="cloudy">Partly Cloudy</p>
             <div class="weatherGrid">
                 <p >Wind Speed:</p>
-                <p><span id="windspeed">15</span>km/h</p> 
+                <p><input id="windspeed">km/h</p> 
                 <p>Wind Chill:</p>
-                <p><span class="windchill"></span></p>
+                <p><button onclick="calcchill()">Try</button><span class="windchill">&#160&#160&#160&#160&nbsp&nbsp&nbsp</span></p>
             </div>
         </section>
 

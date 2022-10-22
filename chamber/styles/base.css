@@ -444,5 +444,10 @@ main h2{
     font-size: 18px;
     font-weight: 400;
 }
+/* INPUT & BUTTON */
+input, #windspeed{
+	width: 40px;
+    text-align: center;
+}
 
 
