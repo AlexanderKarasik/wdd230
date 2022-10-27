@@ -62,16 +62,34 @@ nav ul.open{
     display: block;
     text-align: center;
 }
-
+/* HAMBURGER */
 #hamburgerBtn{
     float: right;
-    margin-top: -3.6rem;
+    margin-top: -3.2rem;
     margin-right:10px;
     justify-self: right;
-    width: 30px;
-    height:30px;
+    /* width: 30px;
+    height:30px; */
     transition: transform .2s;
 }
+
+.bar{
+    display:block;
+    width:25px;
+    height:3px;
+    margin:5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #555; 
+  }
+
+  #hamburgerBtn.open .bar:nth-child(2){
+    opacity:0;
+  }
+  #hamburgerBtn.open .bar:nth-child(1){   transform:translateY(8px) rotate(45deg);
+  }
+  #hamburgerBtn.open .bar:nth-child(3){   transform:translateY(-8px) rotate(-45deg);
+  }
 
 #hamburgerBtn:focus{
     border: none;
@@ -80,7 +98,7 @@ nav ul.open{
 .icon img{
     width:30px;
    float:right;
-    margin-right: 45px;
+    margin-right: 65px;
     margin-top:-36px;
     transition: transform .2s;   
 }
@@ -88,7 +106,7 @@ nav ul.open{
 .twitter_icon img{
     width:30px;
    float:right;
-    margin-right: 85px;
+    margin-right: 110px;
     margin-top:-36px;
     transition: transform .2s;
 }
@@ -99,11 +117,6 @@ nav ul.open{
   transform: scale(1.1);
 }
 
-#hamburgerBtn span:nth-child(2){display:none;}
-#hamburgerBtn span:nth-child(1){display:block;}
-
-#hamburgerBtn.open span:nth-child(2){display:block;}
-#hamburgerBtn.open span:nth-child(1){display:none;}
 
 footer{
     text-align: center;
