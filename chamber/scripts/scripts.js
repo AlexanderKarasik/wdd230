@@ -2,6 +2,11 @@ function toggleMenu() {
   document.getElementById("primaryNav").classList.toggle("open");
   document.getElementById("hamburgerBtn").classList.toggle("open");
 }
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  document.querySelector("#hamburgerBtn").classList.remove("open");
+  document.querySelector("#primaryNav").classList.remove("open");
+}))
+
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 
