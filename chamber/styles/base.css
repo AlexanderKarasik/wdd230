@@ -223,8 +223,8 @@ main section{
     font-weight: 700;
     margin:0;
     cursor: pointer;
-    padding: 1em;
-    font-size: 1.2em;
+    padding: 0.7em;
+    font-size: 0.9em;
     border: none;
     transition: transform .2s;
 }
@@ -235,7 +235,7 @@ main section{
     -webkit-transform: scale(1.1); 
     transform: scale(1.01);  
     transform: translate(-50%, -50%); 
-    font-size: 1.25em;
+    font-size: 0.92em;
 } 
 
 /* EVENT */
