@@ -7,6 +7,12 @@
     margin-top: -4.3rem;   
 }
 
+nav ul{
+    margin-bottom:-185px;
+    Right:130%; 
+    font-size:18px;
+}
+
 .icon img{
     width:40px;
    float:right;
