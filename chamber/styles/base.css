@@ -472,4 +472,50 @@ input, #windspeed{
     text-align: center;
 }
 
+/* DISCOVERY */
+#discover{
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    display: block;
+}
+#discover h1{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color:#333; 
+    border-top: rgba(12, 88, 159, 0.6) 3px double; 
+    border-bottom: rgba(12, 88, 159, 0.6) 3px double;
+    padding-top: 10px;
+    padding-bottom:10px;
+    width: 50%;
+    margin:0 auto;
+    margin-bottom: 15px;
+
+}
+
+#discover figcaption{
+    text-align: center;
+    width:80%;
+    margin: 0 auto;
+    margin-bottom:0px;
+}
+
+#discover picture img{
+   align-self: center;
+   width: 100%;
+   border-radius: 10px;
+}
+
+.myphoto{
+    width:90%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    box-shadow: 9px 9px 9px #999; 
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+
+
+
+
 

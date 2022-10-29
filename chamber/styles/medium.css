@@ -176,5 +176,30 @@ main section{
 #hero button:hover{
     font-size: 1.25em;
 }
+
+.myphoto{
+    transition: transform .2s;
+    margin-bottom:30px;
+}
+
+.myphoto:hover{
+    /* -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);  */
+    transform: scale(1.02);
+}
+
+#discover h1{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 30%;
+    border-top: rgba(12, 88, 159, 0.6) 4px double; 
+    border-bottom: rgba(12, 88, 159, 0.6) 4px double;
+}
+
+#discover figcaption{
+    font-size: 20px;
+
+}
 }
 
