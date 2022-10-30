@@ -456,7 +456,7 @@ main h2{
 }
 
 /* TEMPORAL BANNER */
-#bannertemp{
+#bannertemp, .lastVisit{
     text-align: center;
     background-color: rgba(12, 88, 159, 0.8);
     color:#eee;
@@ -472,7 +472,7 @@ input, #windspeed{
     text-align: center;
 }
 
-/* DISCOVERY */
+/* DISCOVER */
 #discover{
     font-family: 'Kalam', cursive;
     text-align: center;
@@ -480,7 +480,7 @@ input, #windspeed{
 }
 #discover h1{
     text-align: center;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 600;
     color:#333; 
     border-top: rgba(12, 88, 159, 0.6) 3px double; 
@@ -498,6 +498,8 @@ input, #windspeed{
     width:80%;
     margin: 0 auto;
     margin-bottom:0px;
+    color: #333;
+    font-size: 18px;
 }
 
 #discover picture img{
