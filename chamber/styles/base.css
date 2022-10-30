@@ -466,6 +466,11 @@ main h2{
     font-size: 18px;
     font-weight: 400;
 }
+
+#bannertemp{
+    display:none;
+}
+
 /* INPUT & BUTTON */
 input, #windspeed{
 	width: 40px;
