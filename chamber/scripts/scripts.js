@@ -63,6 +63,14 @@ try {
   alert("Error with code or your browser does not support Locale");
 }
 
+// TEMPORAL BANNER
+console.log(new Date().getDay());
+if (new Date().getDay() == 1 || new Date().getDay() == 2) {
+  document.querySelector("#bannertemp").style.display = "block";
+} else {
+  document.querySelector("#bannertemp").style.display = "none";
+}
+
 // DISCOVER, LAST VISIT
 let lastVisit = Number(window.localStorage.getItem("lastVisitDate"));
 if (lastVisit !== 0) {
@@ -71,7 +79,8 @@ if (lastVisit !== 0) {
   let difference = date_2 - date_1;
   let result = Math.floor(difference / (1000 * 3600 * 24));
   if (result === 0) {
-    document.querySelector("#lastVisit").textContent = "You have visited this page less than one day ago."
+    document.querySelector("#lastVisit").textContent =
+      "You have visited this page less than one day ago.";
   } else if (result === 1) {
     document.querySelector("#lastVisit").textContent =
       "You have visited this page one day ago.";
@@ -86,10 +95,4 @@ if (lastVisit !== 0) {
 }
 localStorage.setItem("lastVisitDate", Date.now());
 
-// TEMPORAL BANNER
-console.log(new Date().getDay());
-if (new Date().getDay() == 1 || new Date().getDay() == 2) {
-  document.querySelector("#bannertemp").style.display = "block";
-} else {
-  document.querySelector("#bannertemp").style.display = "none";
-}
+
