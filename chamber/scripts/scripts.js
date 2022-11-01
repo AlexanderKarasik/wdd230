@@ -63,8 +63,9 @@ try {
   alert("Error with code or your browser does not support Locale");
 }
 
+
+
 // TEMPORAL BANNER
-console.log(new Date().getDay());
 if (new Date().getDay() == 1 || new Date().getDay() == 2) {
   document.querySelector("#bannertemp").style.display = "block";} 
 
