@@ -186,11 +186,31 @@
 
     .myphoto{
         margin-bottom: 40px;
+        width: 75%;
     }
     
     #discover h1{
         font-size: 35px;
         width: 25%;
+    }
+
+    /* FLIPBOX */
+    .flip-box{
+        width:75%;
+    }
+    }
+
+@media only screen and (min-width: 1500px){
+    .flip-box{
+        display: block;
+    }
+
+    #last{
+        display: none;
+    }
+    
+    .flip-box .myphoto{
+        transform: scale(1);
     }
     
     }
