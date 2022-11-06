@@ -8,7 +8,7 @@
 }
 
 nav ul{
-    margin-bottom:-185px;
+    margin-bottom:-240px;
     Right:130%; 
     font-size:18px;
 }
@@ -199,7 +199,20 @@ main section{
 
 #discover figcaption{
     font-size: 20px;
-
 }
+
+main#joinpage{
+    display:block;
+    margin: 0 3rem -15px 3rem;
+}
+
+main.Thankyou{
+    display:block
+}
+
+form label.top, form div{
+    font-size: 0.9rem;
+}
+
 }
 

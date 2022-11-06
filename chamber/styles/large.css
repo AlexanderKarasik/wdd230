@@ -194,10 +194,26 @@
         width: 25%;
     }
 
-    /* FLIPBOX */
+    /* ------FLIPBOX------ */
     .flip-box{
         width:75%;
     }
+
+    /* -----JOIN----- */
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+    form{
+        max-width: 64rem;
+        /* margin:auto; */
+    }
+
+    .blue{
+        display: inline;
+    }
+    
+
     }
 
 @media only screen and (min-width: 1500px){
@@ -212,6 +228,5 @@
     .flip-box .myphoto{
         transform: scale(1);
     }
-    
     }
     

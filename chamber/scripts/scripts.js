@@ -16,6 +16,7 @@ const d = new Date();
 const year = d.getFullYear();
 // console.log(year);
 document.getElementById("year").innerHTML = year;
+
 let lastmodif = new Date(document.lastModified);
 const options = {
   day: "numeric",
@@ -63,11 +64,28 @@ try {
   alert("Error with code or your browser does not support Locale");
 }
 
-
-
 // TEMPORAL BANNER
 if (new Date().getDay() == 1 || new Date().getDay() == 2) {
   document.querySelector("#bannertemp").style.display = "block";} 
+
+
+// -----JOIN PAGE HIDDEN INPUT-----
+
+let joinDate;
+function getDate(){
+document.getElementById("date").value = new Date();
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
