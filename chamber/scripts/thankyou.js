@@ -1,20 +1,47 @@
 function getInfo(){
     let fname = document.getElementById("fname").value;
+    if(fname===""){
+        fname="N/A"
+    }
    localStorage.setItem("fname", fname);
     let lname = document.getElementById("lname").value;
     localStorage.setItem("lname", lname);
     let title = document.getElementById("title").value;
+    if(title===""){
+        title="N/A"
+    }
    localStorage.setItem("title", title);
    let email = document.getElementById("email").value;
    localStorage.setItem("email", email);
    let phone = document.getElementById("phone").value;
+   if(phone===""){
+    phone="N/N"
+   }
    localStorage.setItem("phone", phone);
    let bname = document.getElementById("bname").value;
    localStorage.setItem("bname", bname);
-   let membership = document.getElementsByClassName("membership").value;
-   localStorage.setItem("membership", membership);
-   let description = document.getElementById("description1").innerHTML;
+   let description = document.getElementById("description1").value;
+   if(description===""){
+    description="N/A"
+   }
    localStorage.setItem("description", description);
+
+//    -------CHECK RADIO BUTTON MEMBERSHIP--------
+   if(document.getElementById('np').checked) {   
+    localStorage.setItem("membership", document.getElementById("np").value);   
+}   
+else if(document.getElementById('bronze').checked) {   
+    localStorage.setItem("membership", document.getElementById("bronze").value);     
+}   
+else if(document.getElementById('silver').checked) {   
+    localStorage.setItem("membership", document.getElementById("silver").value);     
+}   
+else if(document.getElementById('gold').checked) {   
+    localStorage.setItem("membership", document.getElementById("gold").value);       
+}  
+else {   
+    localStorage.setItem("membership", "not selected")   
+}   
    }
    
    document.getElementById("joinFname").innerHTML = (window.localStorage.getItem("fname"));

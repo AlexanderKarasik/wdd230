@@ -8,15 +8,16 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
 body{    
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
 }
 
 nav, footer, main{
     background-color: white;
     margin-top: .9rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat' sans-serif ;
     font-weight: 300; 
 }
 
@@ -60,7 +61,7 @@ nav ul li a{
     color: #333;
     /* border-top: 1px solid rgba(0,0,0,0.5); */
     color: white;
-    transition: transform .2s;
+    transition: transform .4s;
 }
 
 /*nav ul li.active a{
@@ -112,7 +113,7 @@ nav ul li a:hover{
    float:right;
     margin-right: 65px;
     margin-top:-36px;
-    transition: transform .2s;   
+    transition: transform .4s;   
 }
 
 .twitter_icon img{
@@ -120,7 +121,7 @@ nav ul li a:hover{
    float:right;
     margin-right: 110px;
     margin-top:-36px;
-    transition: transform .2s;
+    transition: transform .4s;
 }
 
 .icon img:hover, .twitter_icon img:hover, #hamburgerBtn:hover{
@@ -229,14 +230,14 @@ main section{
     padding: 0.7em;
     font-size: 0.9em;
     border: none;
-    transition: transform .2s;
+    transition: transform .7s;
 }
 
 #hero button:hover{
     position: absolute;
-    -ms-transform: scale(1.1); 
-    -webkit-transform: scale(1.1); 
-    transform: scale(1.01);  
+    /* -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);  */
+    /* transform: scale(1.01);   */
     transform: translate(-50%, -50%); 
     font-size: 0.92em;
 } 
@@ -438,7 +439,7 @@ main h2{
     cursor: pointer;
     margin-bottom: 10px;
     margin-top:10px;
-    transition: transform .2s;
+    transition: transform .4s;
       
 }
 
@@ -583,7 +584,7 @@ input, #windspeed{
 
 form fieldset{
     margin: 1rem 0;
-    border: 2px solid #cad5fa;
+    border: 1px solid #cad5fa;
     border-radius: 10px;
     padding: .5rem 2%;
     background-color:#e5effd;
@@ -609,7 +610,7 @@ form label.top input, form label.top select {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
-    border: solid 2px rgb(192, 192, 192);
+    border: solid 1px rgb(192, 192, 192);
     border-radius: 4px;
     padding: .75rem;
     color: #333;
@@ -638,6 +639,7 @@ form input.submitBtn{
     max-width: 20rem;
     border: 2px solid rgb(73, 138, 73);
     cursor: pointer;
+    transition: transform .4s;
 }
 
 form label.top input:required {
@@ -659,7 +661,7 @@ main#joinpage{
     width: 100%;
     max-width: 35rem;
     border-radius: 4px;
-    border: solid 2px rgb(192, 192, 192);
+    border: solid 1px rgb(192, 192, 192);
     margin-top:0.2rem;
     font-size: 18px;
     color:#333
@@ -681,7 +683,7 @@ main#joinpage{
 .blue{
     color: rgb(57, 57, 251);
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     display: none;
 }
 
@@ -738,7 +740,98 @@ main#joinpage{
     display: block;
     line-height: 1.5rem;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto -15px auto;
   }
+
+  /* --------TABLE--------- */
+
+table {
+	margin: 116px 40px 0 10%;
+    font-family: "Montserrat";
+    font-weight: 300;
+    display:none;
+    white-space: nowrap;
+    background-color: rgb(245, 253, 241);
+    width:100%;
+    max-height: 974px;
+    max-width: 462px;
+    padding: 10px;
+    border-radius:10px;
+    border: 1px solid rgb(214, 233, 204);
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+  padding: 8px;
+  caption-side: bottom;
+	font-size: .8em;
+    color: #555
+}
+
+tr:first-child th {
+	background-color: var(--back);
+	color: var(--forelight);
+}
+
+th, td {
+	padding: 7px 7px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #555;
+    border: 1px solid white;
+}
+
+td {
+	text-align: center;
+}
+
+tbody td:nth-child(1) {
+	background-color: white;
+}
+
+tbody td:nth-child(2) {
+	background-color: rgb(156, 137, 137, 0.1);
+}
+
+#hfirst{
+    background-color: rgb(156, 137, 137, 0.9);
+    color: #fff
+}
+
+tbody td:nth-child(3) {
+	background-color: rgb(96, 211, 234, 0.2);
+}
+
+thead tr th:nth-child(3){
+    background-color: rgb(96, 211, 234, 0.9);
+    color:#555
+}
+
+tbody td:nth-child(4) {
+	background-color: rgba(96, 124, 234, 0.1);
+}
+
+thead tr th:nth-child(4){
+    background-color: rgb(96, 124, 234, 0.9);
+    color:#fff;
+}
+
+tbody td:nth-child(5) {
+	background-color: rgba(238, 241, 88, 0.2);
+}
+
+thead tr th:nth-child(5){
+    background-color: rgb(206, 235, 91, 0.9);
+    color: #555
+}
+
+#notdisplay{
+    background-color: transparent;
+    border: none;
+}
+
+
+
 
 

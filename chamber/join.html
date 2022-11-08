@@ -40,7 +40,7 @@
             <li class="active"><a class="nav-link" href="index.html">Home</a></li>
             <li><a class="nav-link" href="discover.html">Discover</a></li>
             <li class="active"><a class="nav-link" href="#">Directory</a></li>
-            <li class="join"><a class="nav-link" href="#">Join</a></li>
+            <li class="join"><a class="nav-link" href="join.html">Join</a></li>
             <li><a class="nav-link" href="#">Contact</a></li>     
         </ul>
     </nav>
@@ -58,8 +58,9 @@
      <!-- MAIN -->
      
      <main id="joinpage">
-        <h1>Membership application form</h1>
-        <form method="get" action="thankyou.html" target="_blank">
+        <div id="form">
+        <form method="get" action="thankyou.html">
+            <h1>Membership application form</h1>
             <div class="legend">Personal Information</div>
             <fieldset>
                 <label class="top">&nbsp;&nbsp;First name<span class="red">*</span> <input type="text" name="fname" id="fname" required></label>
@@ -74,19 +75,165 @@
                 <label class="top"><span class ="tooltip">&nbsp;&nbsp;Business name<span class="red">*</span> <span class="blue">&#9432;</span> <span class="tooltiptext">Please enter company's name</span></span>
                     <input type="text" name="bname" id="bname" required></label>
                 
-                    <div id="membership"><span class ="tooltip">&nbsp;&nbsp;Membership Level <span class="blue">&#9432;</span> <span class="tooltiptext">Please refer to the Membership Level table</span></span></div>
-                <label class="sbs"><input class="membership" type="radio" name="membership" value="np"><span class ="tooltip">&nbsp;NP Membership <span class="blue">&#9432;</span><span class="tooltiptext"> Non profit organizations</span></span></label>
-                <label class="sbs"><input class="membership" type="radio" name="membership" value="bronze"> Bronze Membership</label>
-                <label class="sbs"><input class="membership" type="radio" name="membership" value="silver"> Silver Membership</label>
-                <label class="sbs"><input class="membership" type="radio" name="membership" value="gold"> Gold Membership</label>
+                    <div id="membership"><span class ="tooltip">&nbsp;&nbsp;Membership Level <span class="blue">&#9432;</span> <span class="tooltiptext">Please refer to the Membership Level Table</span></span></div>
+                <label class="sbs"><input class="membership" type="radio" name="membership" id="np" value="np"><span class ="tooltip">&nbsp;NP Membership <span class="cost">(free)</span> <span class="blue">&#9432;</span><span class="tooltiptext"> Non profit organizations</span></span></label>
+                <label class="sbs"><input class="membership" type="radio" name="membership" id="bronze" value="bronze"> Bronze Membership <span class="cost">($200 yearly)</span></label>
+                <label class="sbs"><input class="membership" type="radio" name="membership" id="silver" value="silver"> Silver Membership <span class="cost">($400 yearly)</span></label>
+                <label class="sbs"><input class="membership" type="radio" name="membership" id="gold" value="gold"> Gold Membership <span class="cost">($600 yearly)</span></label>
 
-                <label class="top" id="description">&nbsp;&nbsp;<span class ="tooltip">&nbsp;Description <span class="blue">&#9432;</span><span class="tooltiptext"> Please briefly describe your business</span></span><br> <textarea name="description1" rows="8" id="description"></textarea></label>
+                <label class="top" id="description">&nbsp;&nbsp;<span class ="tooltip">&nbsp;Description <span class="blue">&#9432;</span><span class="tooltiptext"> Please briefly describe your business</span></span><br> <textarea name="description" rows="8" id="description1"></textarea></label>
             </fieldset>
 
             <input type="hidden" id="date" name="date" value="CurrentTime">
 
             <input type="submit" value="Join The Chamber " class="submitBtn" onclick="getDate(), getInfo()">  
-        </form>        
+        </form> 
+        </div>
+        
+        <!-- -------TABLE------- -->
+        
+        <table>
+            <caption>Membership Levels</caption>
+            <thead>
+                <tr>
+                    <th scope="col" id="notdisplay"></th>
+                    <th scope="col" id="hfirst" >Non <br>Profit</th>
+                    <th scope="col" id = "hsecond">Bronze</th>
+                    <th scope="col">Silver</th>
+                    <th scope="col">Gold</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Courses, Trainings</td>
+                    <td>&#10003;</td>
+                    <td>&#x2713;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Business referrals</td>
+                    <td>&#10003;</td>
+                    <td>&#x2713;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                
+                <tr>
+                    <td>Member-to-member <br>discounts</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Young Professionals<br> Group</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Mentors on the Move</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Electronic Newsletter</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Monthly Magazine</td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Website Banner Ad</td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Informational Webinars</td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Online Directory Ad</td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Serve on our Business<br> Committees</td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Targeted Matchmaking</td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Eligible to lead<br> a Business Council</td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <td>Invitations to exclusive<br> legislative events</td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <td>One-on-One meeting <br>with Chamber CEO</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                </tr>
+                <td>Invitations to Chairman's <br>Lucheon</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                </tr>
+                <td>Eligible for Nominations<br>to Boardof Directors</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                </tr>
+                <td>Complimentary Advocacy<br> consultation</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                </tr>
+                <td>Price per year</td>
+                    <td>free</td>
+                    <td>$200</td>
+                    <td>$400</td>
+                    <td>$600</td>
+                </tr>
+            </tbody>
+        </table>
         </main>
 
 

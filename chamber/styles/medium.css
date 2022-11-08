@@ -168,14 +168,15 @@ main section{
     display:block;
 }
 
-#hero button{
+ #hero button{
     padding: 1em;
     font-size: 1.2em;
-}
+} 
 
 #hero button:hover{
     font-size: 1.25em;
-}
+} 
+
 
 .myphoto{
     transition: transform .4s;
@@ -213,6 +214,5 @@ main.Thankyou{
 form label.top, form div{
     font-size: 0.9rem;
 }
-
 }
 
