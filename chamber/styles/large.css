@@ -186,7 +186,7 @@
 
     .myphoto{
         margin-bottom: 40px;
-        width: 75%;
+        width: 65%;
     }
     
     #discover h1{
@@ -196,7 +196,7 @@
 
     /* ------FLIPBOX------ */
     .flip-box{
-        width:75%;
+        width:65%;
     }
 
     /* -----JOIN----- */
@@ -256,6 +256,7 @@
 @media only screen and (min-width: 1500px){
     .flip-box{
         display: block;
+        margin-bottom: -105px;
     }
 
     #last{

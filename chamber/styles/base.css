@@ -751,13 +751,13 @@ table {
     font-weight: 300;
     display:none;
     white-space: nowrap;
-    background-color: rgb(245, 253, 241);
+    background-color: rgb(231, 252, 221);
     width:100%;
     max-height: 974px;
     max-width: 458px;
     padding: 10px;
     border-radius:10px;
-    border: 1px solid rgb(214, 233, 204);
+    border: 1px solid rgb(220, 236, 212);
     border-collapse: collapse;
 }
 
@@ -791,7 +791,7 @@ tbody td:nth-child(1) {
 }
 
 tbody td:nth-child(2) {
-	background-color: rgb(156, 137, 137, 0.1);
+	background-color: rgb(156, 137, 137, 0.2);
 }
 
 #hfirst{
@@ -809,7 +809,7 @@ thead tr th:nth-child(3){
 }
 
 tbody td:nth-child(4) {
-	background-color: rgba(96, 124, 234, 0.1);
+	background-color: rgba(96, 124, 234, 0.2);
 }
 
 thead tr th:nth-child(4){
