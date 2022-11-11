@@ -1,0 +1,75 @@
+/* @import url("https://fonts.googleapis.com/css?family=Kalam&display=swap"); */
+body {
+    font-family: cursive;
+    text-align: center;
+    font-size: 18px;
+    color:#333;
+    line-height: 1rem;
+}
+
+header, main, footer {
+    margin: 1rem;
+    position: relative;
+    }
+
+div.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));   
+}
+
+section{
+    margin: 1rem;
+    padding: 0.2rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: 1px solid rgb(233, 205, 169)
+}
+
+p{
+    margin:0.3rem;
+}
+
+h2{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+img{ 
+    width:100%;
+    height: 100%;
+}
+
+div.image{
+    padding: 6px;
+    border: 1px solid #ccc; 
+    box-shadow: 9px 9px 9px #999;
+    background-color: #fff;
+    margin-bottom:20px;
+}
+h1{
+    line-height: 2rem;
+    margin: 0px auto 20px auto;
+    font-size: 40px;
+    padding: 1.5rem 0 1.5rem 0;
+    background-color: rgb(209, 244, 244);
+
+}
+
+footer{
+    border-top: 1px solid #555;
+    padding-top:20px;
+    /* padding-bottom: 20px; */
+    margin-left: 50px;
+    margin-right: 50px;
+    /* background-color: rgb(209, 244, 244); */
+}
+
+
+
+
+
+
+
