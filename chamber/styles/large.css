@@ -247,12 +247,31 @@
         grid-column:3/4;  
     }
 
-   
+   /* -------DIRECTORY-------- */
+   .dirlist section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1.5fr 1fr;
+    text-align:left
+} 
 
-   
+.dirlist img{
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+#btnContainer{
+    text-align: left;
+}
+
+#listbtn{
+    margin-right:0;
+}  
 
     }
 
+
+    
 @media only screen and (min-width: 1500px){
     .flip-box{
         display: block;
