@@ -24,7 +24,6 @@ fetch(requestURL)
     let a = document.createElement('a')
     let phone = document.createElement('p');
     let level = document.createElement('p');
-
     name.textContent = company.name;
     address.textContent = company.address;
     a.textContent = company.website;
@@ -36,7 +35,6 @@ fetch(requestURL)
     logo.setAttribute('src', company.icon);
     logo.setAttribute('alt', 'Logo image');
     logo.setAttribute('loading', 'lazy');
-    logo.setAttribute('max-height', '20');
     name.setAttribute('class', 'name');
     a.setAttribute('href', '#');
     // Add/append the section(card) with the h2 element

@@ -250,15 +250,21 @@
    /* -------DIRECTORY-------- */
    .dirlist section{
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1.5fr 1fr;
+    grid-template-columns: 1.2fr 1fr 2fr 1fr 1.5fr 0.5fr;
     text-align:left
 } 
 
 .dirlist img{
-    height: 40px;
-    margin-left: 5px;
-    margin-top: 7px;
+    height: 55px;
+    margin-left: 10px;
+    margin-top: 20px;
 }
+
+.dirlist p{
+    height: 40px;
+    margin-top: 40px;
+}
+
 
 #btnContainer{
     text-align: left;
@@ -271,7 +277,7 @@
     }
 
 
-    
+
 @media only screen and (min-width: 1500px){
     .flip-box{
         display: block;
