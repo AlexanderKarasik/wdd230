@@ -1,0 +1,49 @@
+body{
+    margin: 0 auto;
+    text-align: left;
+    width: 750px;
+    background-color: #fff;
+    color: #555;
+    font-size: 26px;
+}
+
+figure {
+    text-align: left;
+    margin:0;
+}
+  
+h1 {
+    /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+    color: #555;
+
+  /* color: #fff; */
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2f82ee, 0 0 40px #2f82ee, 0 0 50px #2f82ee, 0 0 60px #2f82ee, 0 0 70px #2f82ee;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #395ef3, 0 0 40px #395ef3, 0 0 50px #395ef3, 0 0 60px #395ef3, 0 0 70px #395ef3, 0 0 80px #395ef3;
+  }
+
+}
+
+h2{
+    margin: 0;
+    margin-top: 40px;
+}
+
+figcaption{
+    color:#7740c0;
+    margin-top: -5px;
+}
+
+p{
+    margin-top:20px;
+}
+  
+  
+  
