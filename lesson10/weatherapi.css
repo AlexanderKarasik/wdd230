@@ -22,11 +22,11 @@ h1 {
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2f82ee, 0 0 40px #2f82ee, 0 0 50px #2f82ee, 0 0 60px #2f82ee, 0 0 70px #2f82ee;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(47, 130, 238, 0.5), 0 0 40px rgb(47, 130, 238,0.5), 0 0 50px rgb(47, 130, 238,0.5), 0 0 60px rgb(47, 130, 238,0.5), 0 0 70px rgb(47, 130, 238,0.5);
   }
   
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #395ef3, 0 0 40px #395ef3, 0 0 50px #395ef3, 0 0 60px #395ef3, 0 0 70px #395ef3, 0 0 80px #395ef3;
+    text-shadow: 0 0 20px #fff, 0 0 30px rgb(57, 94, 243, 0.5), 0 0 40px rgb(57, 94, 243, 0.5), 0 0 50px rgb(57, 94, 243, 0.5), 0 0 60px rgb(57, 94, 243, 0.5), 0 0 70px rgb(57, 94, 243, 0.5), 0 0 80px rgb(57, 94, 243, 0.5);
   }
 
 }
