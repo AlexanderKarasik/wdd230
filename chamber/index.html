@@ -82,15 +82,16 @@
 
         <section id="weather">
             <h2>Weather</h2>
-            <div class="temp"><img src="images/weather.png" alt="weather logo" width="80">
-            <p><input id="theInputTemp" type="text"> ℃</p></div>
-            <p id="cloudy">Partly Cloudy</p>
+            <div class="temp"><img alt="weather logo" width="120">
+            <p id="weatherTemp"></p></div>
+            <p id="cloudy"></p>
             <div class="weatherGrid">
                 <p >Wind Speed:</p>
-                <p><input id="windspeed">km/h</p> 
+                <p><span id="windspeed">km/h</p> 
                 <p>Wind Chill:</p>
-                <p><button onclick="calcchill()">Try</button><span class="windchill">&#160&#160&#160&#160&nbsp&nbsp&nbsp</span></p>
+                <p><span class="windchill"></span></p>
             </div>
+            <p id="credit"><em>*Weather data source: www.openweathermap.org</em></p>
         </section>
 
         <section id="news">
@@ -190,7 +191,7 @@
       </div>
    
     </footer>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/weather.js"></script>
   </body>
   </html>
