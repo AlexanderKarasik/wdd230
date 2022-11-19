@@ -274,6 +274,12 @@
     margin-right:0;
 }  
 
+/* back to top button discover */
+.backToTop{
+    bottom: 100px;
+    right: 50px;
+}
+
     }
 
 
