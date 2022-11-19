@@ -38,12 +38,15 @@ h2{
 
 figcaption{
     color:#7740c0;
-    margin-top: -5px;
+    margin-top: -15px;
 }
 
 p{
     margin-top:20px;
 }
-  
+
+img{
+    width: 120px;
+}
   
   
