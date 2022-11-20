@@ -214,5 +214,18 @@ main.Thankyou{
 form label.top, form div{
     font-size: 0.9rem;
 }
+
+.backToTop{
+    height: 60px;
+    width: 60px;
+    font-size: 28px;
+}
+
+.backToTop i{
+    top: 13px;
+    left: 19px;
+}
+
+
 }
 
