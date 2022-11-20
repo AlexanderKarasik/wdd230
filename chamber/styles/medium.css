@@ -198,9 +198,6 @@ main section{
     border-bottom: rgba(12, 88, 159, 0.6) 4px double;
 }
 
-#discover figcaption{
-    font-size: 20px;
-}
 
 main#joinpage{
     display:block;
