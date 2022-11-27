@@ -281,14 +281,81 @@
 }
 
 /* EVENT INFO */
-
-
-
 .flex img{
     width: 110px;
     height: 80px;
     margin-top: 15px;    
 }
+
+/* CONTACT PAGE */
+#contactgrid{
+    display: grid;
+    grid-gap:0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    margin-top: 30px;
+}
+
+#contactform{
+    grid-column: 1/2;
+    /* width:100%; */
+    margin: -10px 20% 0 auto;
+}
+
+#contactform form{
+    width:400px;
+    /* margin: 0 auto; */
+}
+
+#contactform form h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pointcont h2{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+#contactInfo{
+    grid-area: 2/1/3/3;
+    width:70%;
+    margin:160px auto 0 auto;
+    max-width: 1300px;
+    height: 520px;
+}
+
+#contactInfo iframe{
+    height: 400px;
+}
+
+#contactInfo h2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pointcont{
+    grid-column: 2/3;
+    /* display: inline-block; */
+    margin-top:12px;
+    margin-bottom: 0;
+    grid-row: 1/3;
+    /* margin: 0 auto; */
+     /* width:400px; */
+    padding-left: 20%;
+    border-left: 2px solid rgb(208, 208, 208);
+    height:850px;
+}
+
+.contactflex div:nth-child(1) p:nth-child(1){
+    margin-top: 140px;
+}
+
+#contact {
+    height:1400px;
+}
+
    }
 
 
@@ -317,7 +384,6 @@
         height: 110px;
         margin-top: 0;
     }
-    
-    
+
     }
     

@@ -677,7 +677,7 @@ form input.submitBtn{
     transition: transform .4s;
 }
 
-form label.top input:required {
+form label.top input:required{
     border-left: red solid 4px;
     background-color: white;
 }
@@ -712,7 +712,7 @@ main#joinpage{
 
 .red{
     color:#9c2c13;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .blue{
@@ -960,7 +960,75 @@ div.dirgrid section{
     background-color: #f1f1f1;
     cursor: pointer;
   }
-  
+
+/* CONTACT PAGE */
+#contact{
+    margin-left: 0;
+}
+#contact form fieldset{
+    margin: 1rem 0;
+    border: 1px solid #cad5fa;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    padding-bottom: 0;
+}
+
+.pointcont img{
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.pointcont div{
+    clear:left;
+    margin-bottom: 0px;
+    overflow: auto;
+    line-height: 1.8rem;
+}
+
+footer{
+    clear:left;
+}
+#contact h2{
+    color:rgb(25, 76, 153)
+}
+
+iframe{
+    width:100%;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.iframe{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact textarea:required{
+    border-left: red 4px solid;
+}
+
+#contact textarea:required:valid{
+    border-left: green solid 4px;
+    background-color: white;
+}
+
+#contactInfo{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.pointcont{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.contactimage{
+    width: 100%;
+}
+
+
+
+
   
 
 
