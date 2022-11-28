@@ -288,12 +288,16 @@
 }
 
 /* CONTACT PAGE */
+main#contact{
+    margin: 0;
+}
+
 #contactgrid{
     display: grid;
     grid-gap:0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
-    margin-top: 30px;
+    margin-top: 33px;
 }
 
 #contactform{
@@ -327,7 +331,7 @@
 }
 
 #contactInfo iframe{
-    height: 400px;
+    height: 300px;
 }
 
 #contactInfo h2{
@@ -346,14 +350,47 @@
     padding-left: 20%;
     border-left: 2px solid rgb(208, 208, 208);
     height:850px;
+    width: 550px
 }
 
 .contactflex div:nth-child(1) p:nth-child(1){
-    margin-top: 140px;
+    margin-top: 80px;
 }
 
 #contact {
-    height:1400px;
+    height:1290px;
+}
+
+/* main#contact{
+    margin-bottom:50px;
+} */
+
+.pointcont div{
+   width: 400px; 
+margin: 0;
+}
+
+/* H2 DECORATION */
+#hr1{
+    margin:14px auto 25px auto;
+}
+
+#hr1::before, #hr1::after{
+    width: 100px;
+}
+
+
+#hr2::before, #hr2::after{
+    width: 120px;
+}
+
+#hr3{
+    margin:-8px auto 10px auto;
+    width: 400px;
+}
+
+#hr3:before, #hr3:after{
+    width:70px;
 }
 
    }

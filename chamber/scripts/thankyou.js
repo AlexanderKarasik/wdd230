@@ -15,7 +15,7 @@ function getInfo(){
    localStorage.setItem("email", email);
    let phone = document.getElementById("phone").value;
    if(phone===""){
-    phone="N/N"
+    phone="N/A"
    }
    localStorage.setItem("phone", phone);
    let bname = document.getElementById("bname").value;

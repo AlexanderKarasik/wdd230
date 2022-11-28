@@ -199,7 +199,7 @@ main section{
 }
 
 
-main#joinpage{
+main#joinpage, main#contact{
     display:block;
     margin: 0 3rem -15px 3rem;
 }
@@ -223,8 +223,22 @@ form label.top, form div{
     left: 19px;
 }
 
+/* CONTACT PAGE */
 main#contact{
     display: block;
+}
+
+main#contact{
+    margin-bottom: -10px;
+}
+
+.pointcont div{
+   width: 350px;
+   margin: 0 auto;
+}
+
+.pointcont{
+    margin-bottom: 30px;
 }
 
 .contactflex{
@@ -234,9 +248,10 @@ main#contact{
 .contactflex div:nth-child(1){
     background-color: rgb(237, 237, 237);
     margin-top: 25px;
-    margin-bottom:4px;
+    margin-bottom:4.5px;
     margin-right: -15px;
-    padding: 1rem
+    padding: 1rem;
+    border-radius: 10px 0 0 10px;
 }
 
 .iframe{
@@ -247,6 +262,33 @@ main#contact{
 
 iframe{
     height:200px;
+    border-radius: 0 10px 10px 0;
 }
+
+/* H2 DECORATION */
+#hr1{
+    margin:30px auto 25px auto;
+}
+
+#hr1::before, #hr1::after{
+    width: 130px;
+}
+
+#hr2{
+    margin:45px auto 0px auto;
+}
+
+#hr2::before, #hr2::after{
+    width: 145px;
+}
+
+#hr3{
+    margin:-5px auto 10px auto;
+}
+
+#hr3:before, #hr3:after{
+    width:90px;
+}
+
 }
 
