@@ -1036,7 +1036,7 @@ iframe{
 }
 
 .pointcont div{
-    width: 300px;
+    width: 330px;
     margin: 0 auto;
  }
 
@@ -1087,7 +1087,7 @@ iframe{
   }
 
   #hr3{
-    margin:10px auto;
+    margin: -20px auto 10px auto;
   }
 
   #hr3:after, #hr3:before{
