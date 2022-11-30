@@ -38,7 +38,7 @@
         "phone": "(208) 734-9611",
         "website": "www.luxexpress.com",
         "icon": "./images/directory/lux.png",
-        "level": "Bronze"
+        "level": "Silver"
       },
       {
         "name": "Bombas",
@@ -54,7 +54,7 @@
         "phone": "(415) 467-3419",
         "website": "www.origo.com",
         "icon": "./images/directory/origo.png",
-        "level": "Bronze"
+        "level": "Gold"
       },
       {
         "name": "PBS Management",
@@ -70,7 +70,7 @@
         "phone": "(530) 257-0914",
         "website": "www.totalspectrum.com",
         "icon": "./images/directory/totalspectrum.png",
-        "level": "Non Profit"
+        "level": "Silver"
       }
     ]
 }
