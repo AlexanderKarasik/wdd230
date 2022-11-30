@@ -9,11 +9,11 @@ fetch(requestURL)
   .then(function (jsonObject) {
     // ----Store the results of the converted response into an array-----
   const companies = jsonObject['companies'];
-    // console.log(jsonObject);  // temporary checking for valid response and data parsing
+    console.log(jsonObject);  // temporary checking for valid response and data parsing
     companies.forEach(displayCompanies);
 });
 
-//   Build the HTML of the prophet card using the createElement() and appendChild() methods on the document
+//   Build the HTML using the createElement() and appendChild() methods on the document
   function displayCompanies(company) {
     // Create elements to add to the document
     let brand = document.createElement('section');

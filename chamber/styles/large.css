@@ -148,10 +148,13 @@
         font-size: 0.5rem;
     }
 
+    .spotlightDiv{
+        width:160px
+    }
+
     #spotlight3{
         display:block;
         margin-bottom:20px;
-        /* grid-row: 3/4; */
     }
 
     #spotlight2{

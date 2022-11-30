@@ -1,3 +1,5 @@
+ /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap'); */
+ 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
@@ -137,6 +139,15 @@ footer{
 }
 footer img{
     margin-top: 20px;
+}
+
+footer .map{
+    text-decoration: none;
+    color:#fff
+}
+
+footer .map:hover{
+    color:#f1a87b;
 }
 
 .medium{
@@ -397,8 +408,27 @@ main h2{
     padding-bottom:0.5em
 }
 
-#spotlight1 h2{
-    margin-bottom:0.5em;
+.spotlightDiv{
+    background-color: #fff;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    width: 180px;
+    margin:0 auto;
+}
+
+#spotlights h2{
+    margin: 1rem 0 1.4rem 0;
+}
+
+/* #spotlight1 h2{
+    margin-bottom:0px;
+} */
+#spotlight2 h2{
+    margin: 1rem 0 1.7rem 0
+}
+#spotlight2 .spotAddress{
+    margin-top:50px;
 }
 
 #spotlight1 :nth-child(3), #spotlight3 :nth-child(3){
@@ -412,10 +442,6 @@ main h2{
     padding-top:10px;
 }
 
-#spotlight1 :nth-child(5), #spotlight2 :nth-child(5), #spotlight3 :nth-child(5){
-    font-size: 18px;
-    margin-top:-15px;
-}
 
 /* SPOTLIGHT2 */
 
@@ -429,9 +455,7 @@ main h2{
 }
 
 /* SPOTLIGHT3 */
-#spotlight3 :nth-child(2){
-    margin-top: 15px;
-}
+
 
 /* JOIN */
 #join button{
