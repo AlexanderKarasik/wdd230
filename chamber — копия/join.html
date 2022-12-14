@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Join Page in WDD 230</title>
+    <meta
+      name="description"
+      content="Chamber Join Page in WDD 230">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel = "shortcut icon" href = "images/favicon1.ico">
+  </head>
+  
+  <body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img
+              src="images/logo.webp"
+              alt="Logo image"
+              width="150" 
+              
+            ></a>
+          </div>
+          <div class="icon"><a href="http://www.facebook.com" target="_blank"><img src="images/facebook_icon.png" alt="Facebook icon" width="30"></a></div>
+    <div class="twitter_icon"><a href="http://www.twitter.com" target="_blank"><img src="images/twitter_icon.png" alt="Twitter icon" width="30"></a></div>
+    
+    
+    <!-- NAVIGATION HERE -->
+    <nav>
+        <button id="hamburgerBtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul id="primaryNav">
+            <li class="active"><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="discover.html">Discover</a></li>
+            <li class="active"><a class="nav-link" href="directory.html">Directory</a></li>
+            <li class="join"><a class="nav-link" href="join.html">Join</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>     
+        </ul>
+    </nav>
+        
+    </header>
+
+    <div id="banner">
+        <img src="images/image2.jpg" width="100%" alt="City image"> 
+        <div id="info">
+         <h2>Sunrise Chamber of Commerce</h2>
+         <p id="today"></p>
+        </div>
+     </div>
+
+     <!-- MAIN -->
+     
+     <main id="joinpage">
+        <div id="form">
+        <form method="get" action="thankyou.html">
+            <h1>Membership application form</h1>
+            <div class="legend">Personal Information</div>
+            <fieldset>
+                <label class="top">&nbsp;&nbsp;First name<span class="red">*</span> <input type="text" name="fname" id="fname" required></label>
+                <label class="top">&nbsp;&nbsp;Last name<span class="red">*</span><input type="text" name="lname" id="lname" required></label>
+                <label class="top"><span class ="tooltip">&nbsp;&nbsp;Title <span class="blue">&#9432;</span> <span class="tooltiptext">Please enter your business position. Min 7 characters. Letters, hyphens or space only</span></span>
+                    <input type="text" name="title" pattern="[A-Za-z -]{7,}" placeholder="min 7 ch-rs, letters, hyphens and space" id="title"></label>
+                <label class="top">&nbsp;&nbsp;Email<span class="red">*</span> <input type="email" name="email" placeholder="example@gmail.com" id="email" required></label>
+                <label class="top">&nbsp;&nbsp;Phone <input type="tel" name="phone" placeholder="1235551234" id="phone"></label> 
+            </fieldset>
+            <div class="legend">Business Information</div>
+            <fieldset>
+                <label class="top"><span class ="tooltip">&nbsp;&nbsp;Business name<span class="red">*</span> <span class="blue">&#9432;</span> <span class="tooltiptext">Please enter company's name</span></span>
+                    <input type="text" name="bname" id="bname" required></label>
+                
+                    <div id="membership"><span class ="tooltip">&nbsp;&nbsp;Membership Level <span class="blue">&#9432;</span> <span class="tooltiptext">Please refer to the Membership Level Table</span></span></div>
+                <label class="sbs"><input class="membership" type="radio" name="membership" id="np" value="np"><span class ="tooltip">&nbsp;NP Membership <span class="cost">(free)</span> <span class="blue">&#9432;</span><span class="tooltiptext"> Non profit organizations</span></span></label>
+                <label class="sbs"><input class="membership" type="radio" name="membership" id="bronze" value="bronze"> Bronze Membership <span class="cost">($200 yearly)</span></label>
+                <label class="sbs"><input class="membership" type="radio" name="membership" id="silver" value="silver"> Silver Membership <span class="cost">($400 yearly)</span></label>
+                <label class="sbs"><input class="membership" type="radio" name="membership" id="gold" value="gold"> Gold Membership <span class="cost">($600 yearly)</span></label>
+
+                <label class="top" id="description">&nbsp;&nbsp;<span class ="tooltip">&nbsp;Description <span class="blue">&#9432;</span><span class="tooltiptext"> Please briefly describe your business</span></span><br> <textarea name="description" rows="8" id="description1"></textarea></label>
+            </fieldset>
+
+            <input type="hidden" id="date" name="date" value="CurrentTime">
+
+            <input type="submit" value="Join The Chamber " class="submitBtn" onclick="getDate(), getInfo()">  
+        </form> 
+        </div>
+        
+        <!-- -------TABLE------- -->
+        
+        <table>
+            <caption>Membership Levels</caption>
+            <thead>
+                <tr>
+                    <th scope="col" id="notdisplay"></th>
+                    <th scope="col" id="hfirst" >Non <br>Profit</th>
+                    <th scope="col" id = "hsecond">Bronze</th>
+                    <th scope="col">Silver</th>
+                    <th scope="col">Gold</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Courses, Trainings</td>
+                    <td>&#10003;</td>
+                    <td>&#x2713;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Business referrals</td>
+                    <td>&#10003;</td>
+                    <td>&#x2713;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                
+                <tr>
+                    <td>Member-to-member <br>discounts</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Young Professionals<br> Group</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Mentors on the Move</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Electronic Newsletter</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Monthly Magazine</td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Website Banner Ad</td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Informational Webinars</td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Online Directory Ad</td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Serve on our Business<br> Committees</td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Targeted Matchmaking</td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <tr>
+                    <td>Eligible to lead<br> a Business Council</td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <td>Invitations to exclusive<br> legislative events</td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                    <td>&check;</td>
+                </tr>
+                <td>One-on-One meeting <br>with Chamber CEO</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                </tr>
+                <td>Invitations to Chairman's <br>Lucheon</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                </tr>
+                <td>Eligible for Nominations<br>to Boardof Directors</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                </tr>
+                <td>Complimentary Advocacy<br> consultation</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>&check;</td>
+                </tr>
+                <td>Price per year</td>
+                    <td>free</td>
+                    <td>$200</td>
+                    <td>$400</td>
+                    <td>$600</td>
+                </tr>
+            </tbody>
+        </table>
+        </main>
+
+
+     <!-- FOOTER -->
+     <footer>
+        <div class="grid">
+            <div class="left">
+        <div>
+            <a href="index.html"><img
+            src="images/logo.webp"
+            alt="Logo image"
+            width="150"> </a>
+        </div>
+        
+        <h3>
+            Sunrise Chamber of Commerce
+        </h3>
+        <p>
+            288 South Bishop Circle<br>
+            Irmo, SC 29063
+        </p>
+        </div>
+        <div class="right">
+        <p>
+            info@srcoc.org
+        </p>
+        <p>
+            +(323) 3060-4557
+        </p>
+        <p>
+            Location Map &#x1F4CC;
+        </p>
+        </div>
+        </div>
+        
+        <div class="small">
+            &copy;<span id="year"></span> Sunrise Chamber <br> Alexander Karasik <br>
+            WDD 230 Project <br>
+            <div id="updates">
+                Last Updated: <span id="lastupdate"></span> <span id="time"></span>
+              </div>
+          </div>
+
+      <div class="medium">
+        &copy;<span id="year"></span> Sunrise Chamber | Alexander Karasik |
+        WDD 230 Project |<br>
+        <div id="updates">
+            Last Updated: <span id="lastupdate1"></span> <span id="time1"></span>
+      </div>
+      </div>
+
+      <div class="large">
+        &copy;<span id="year"></span> Sunrise Chamber | Alexander Karasik |
+        WDD 230 Project | 
+        <span id="updates">
+            Last Updated: <span id="lastupdate2"></span> <span id="time2"></span>
+        </span>
+      </div>
+   
+    </footer>
+    <script src="..//lesson7/lazyload.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/thankyou.js"></script>
+  </body>
+  </html>

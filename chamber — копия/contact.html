@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Contact Page in WDD 230</title>
+    <meta
+      name="description"
+      content="Chamber Contact Page in WDD 230">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel = "shortcut icon" href = "images/favicon1.ico">
+  </head>
+  
+  <body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img
+              src="images/logo.webp"
+              alt="Logo image"
+              width="150" 
+              
+            ></a>
+          </div>
+          <div class="icon"><a href="http://www.facebook.com" target="_blank"><img src="images/facebook_icon.png" alt="Facebook icon" width="30"></a></div>
+    <div class="twitter_icon"><a href="http://www.twitter.com" target="_blank"><img src="images/twitter_icon.png" alt="Twitter icon" width="30"></a></div>
+    
+    
+    <!-- NAVIGATION HERE -->
+    <nav>
+        <button id="hamburgerBtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul id="primaryNav">
+            <li class="active"><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="discover.html">Discover</a></li>
+            <li class="active"><a class="nav-link" href="directory.html">Directory</a></li>
+            <li class="join"><a class="nav-link" href="join.html">Join</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>     
+        </ul>
+    </nav>
+        
+    </header>
+
+    <div id="banner">
+        <img src="images/image2.jpg" width="100%" alt="City image"> 
+        <div id="info">
+         <h2>Sunrise Chamber of Commerce</h2>
+         <p id="today"></p>
+        </div>
+     </div>
+
+     <!-- MAIN -->
+        <main id="contact">
+            <!-- <img class="contactimage" src="images/hands.jpg" alt="contact image"> -->
+            <div id="contactgrid">
+            <div id="contactform">
+                <form method="get" action="thankyou1.html">
+                    <h2 class="hr-lines" id="hr1">Contact Us</h2>
+                    <fieldset>
+                        <label class="top">&nbsp;&nbsp;First name<span class="red">*</span> <input type="text" name="fname" id="fname" required></label>
+                        <label class="top">&nbsp;&nbsp;Last name<span class="red">*</span><input type="text" name="lname" id="lname" required></label>
+                        <label class="top">&nbsp;&nbsp;Email<span class="red">*</span> <input type="email" name="email" placeholder="example@gmail.com" id="email" required></label>
+                        <label class="top">&nbsp;&nbsp;Phone <input type="tel" name="phone" placeholder="1235551234" id="phone"></label> 
+                        <label class="top" id="description">&nbsp;&nbsp;<span class ="tooltip">&nbsp;Message<span class="red">*</span><span class="blue">&#9432;</span><span class="tooltiptext"> What can we do for you?</span></span><br> <textarea name="description" rows="8" id="description1" required></textarea></label>
+                        <input type="submit" value="Get in Touch" class="submitBtn" onclick="getDate(), getInfo()">
+                    </fieldset>
+                    </form>
+                    </div> 
+
+            <div id="contactInfo">
+                <h2 class="hr-lines" id="hr2">Visit Us</h2>
+
+                <div class="contactflex">
+           <div><p>288 South Bishop Circle<br>
+            Irmo, SC 29063</p> 
+            <p>
+                Monday – Friday: 9:00 a.m. to 6:00 p.m.  
+            </p>
+            </div>
+            <div class="iframe">
+                <iframe width="800" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=800&amp;height=400&amp;hl=en&amp;q=South%20Bishop%20Circle%20+(Sunrise%20map)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'></a>
+            </div>
+            </div>
+            </div> <hr>
+
+            <div class="pointcont">
+
+              <h2 class="hr-lines" id="hr3">Points of Contact</h2> 
+              <div>
+                <p>
+                    <img src="images/ceo.jpg" width="120" alt="Lacey L. McInnis" >
+                    <span class="bold">Lacey L. McInnis</span><br>
+                    President & CEO<br>
+                    (253) 941-2139 ext. 122<br>
+                    LMcInnis@srcoc.org<br>
+                </p>
+                </div>
+                
+                <div>
+                <p>
+                    <img src="images/ceo1.jpg" width="120" alt="Yvette D. Huckstep" >
+                    <span class="bold">Yvette D. Huckstep</span><br>
+                    Chief Operating Officer<br>
+                    (253) 941-2139 ext. 114<br>
+                    YvHuckstep@srcoc.org
+                </p>
+            </div>
+             <div>  
+            <p>
+                    <img src="images/director.jpg" width="120" alt="John E. Crockett" >
+                    <span class="bold">John E. Crockett</span><br>
+                    Director of Membership & Events<br>
+                    (253) 941-2139 ext. 165<br>
+                    JCrockett@srcoc.org
+                </p></div>
+
+                <div>
+                <p>
+                    <img src="images/operator.jpg" width="120" alt="Paul J. Hay" >
+                    <span class="bold">Paul J. Hay</span><br>
+                    Operations Assistant<br>
+                    (253) 941-2139 ext. 143<br>
+                    PaulJHay@srcoc.org
+                </p>
+                </div>
+            </div>
+        </div>
+        </main>
+ 
+     
+
+
+     <!-- FOOTER -->
+     <footer>
+        <div class="grid">
+            <div class="left">
+        <div>
+            <a href="index.html"><img
+            src="images/logo.webp"
+            alt="Logo image"
+            width="150"> </a>
+        </div>
+        
+        <h3>
+            Sunrise Chamber of Commerce
+        </h3>
+        <p>
+            288 South Bishop Circle<br>
+            Irmo, SC 29063
+        </p>
+        </div>
+        <div class="right">
+        <p>
+            info@srcoc.org
+        </p>
+        <p>
+            +(323) 3060-4557
+        </p>
+        <p>
+            Location Map &#x1F4CC;
+        </p>
+        </div>
+        </div>
+        
+        <div class="small">
+            &copy;<span id="year"></span> Sunrise Chamber <br> Alexander Karasik <br>
+            WDD 230 Project <br>
+            <div id="updates">
+                Last Updated: <span id="lastupdate"></span> <span id="time"></span>
+              </div>
+          </div>
+
+      <div class="medium">
+        &copy;<span id="year"></span> Sunrise Chamber | Alexander Karasik |
+        WDD 230 Project |<br>
+        <div id="updates">
+            Last Updated: <span id="lastupdate1"></span> <span id="time1"></span>
+      </div>
+      </div>
+
+      <div class="large">
+        &copy;<span id="year"></span> Sunrise Chamber | Alexander Karasik |
+        WDD 230 Project | 
+        <span id="updates">
+            Last Updated: <span id="lastupdate2"></span> <span id="time2"></span>
+        </span>
+      </div>
+   
+    </footer>
+    <script src="..//lesson7/lazyload.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/thankyou.js"></script>
+  </body>
+  </html>

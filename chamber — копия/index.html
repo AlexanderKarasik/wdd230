@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Home Page Build in WDD 230</title>
+    <meta
+      name="description"
+      content="Chamber Home Page Build in WDD 230">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel = "shortcut icon" href = "images/favicon1.ico">
+  </head>
+  
+  <body>
+    <div id="bannertemp">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img
+              src="images/logo.webp"
+              alt="Logo image"
+              width="150" 
+              
+            ></a>
+          </div>
+          <div class="icon"><a href="http://www.facebook.com" target="_blank"><img src="images/facebook_icon.png" alt="Facebook icon" width="30"></a></div>
+    <div class="twitter_icon"><a href="http://www.twitter.com" target="_blank"><img src="images/twitter_icon.png" alt="Twitter icon" width="30"></a></div>
+    
+    
+    <!-- NAVIGATION HERE -->
+    <nav>
+        <button id="hamburgerBtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul id="primaryNav">
+            <li class="active"><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="discover.html">Discover</a></li>
+            <li class="active"><a class="nav-link" href="directory.html">Directory</a></li>
+            <li class="join"><a class="nav-link" href="join.html">Fresh</a></li>
+            <li><a class="nav-link" href="contact.html">About Us</a></li>     
+        </ul>
+    </nav>
+        
+    </header>
+
+    <div id="banner">
+        <img src="images/image2.jpg" width="100%" alt="City image"> 
+        <div id="info">
+         <h2>Sunrise Chamber of Commerce</h2>
+         <p id="today"></p>
+        </div>
+     </div>
+    <!-- MAIN GOES HERE -->
+    <main>
+        <section id="hero">
+            <picture>
+            <!-- <img src="images/hero1.jpg" alt="hero image" width="100%" height="100%"> -->
+                <source media="(max-width: 500px)" srcset="images/small1.jpg">
+                <source media="(max-width: 1023px)" srcset="images/small1.jpg">
+                <img src = "images/large1.jpg" alt="hero image">
+            <div id="button"><a href = "join.html" target="_blank"><button>JOIN THE CHAMBER</button></a></div>
+        </picture>
+        </section>
+
+        <section id="event">
+          <img class="restImg" src = "images/restaurant.jpg" alt="restaurant picture">
+          <div id="eventInfo">
+            <div class="flex"><img src="images/logo_rest.png" alt="logo restaurant" width="160">
+            <p>SUNRISE<br><b id="restWeek">RESTAURANT WEEK</b>
+            </p></div>
+            <p id="dateRest">NOVEMBER 17-24</p>
+            <p>SUNRISE CHAMBER OF COMMERCE</p>
+          </div>
+        </section>
+
+        <section id="weather">
+            <h2>Weather</h2>
+            <div class="temp"><img alt="weather logo" width="120">
+            <p id="weatherTemp"></p></div>
+            <p id="cloudy"></p>
+            <div class="weatherGrid">
+                <p >Wind Speed:</p>
+                <p><span id="windspeed">km/h</p> 
+                <p>Wind Chill:</p>
+                <p><span class="windchill"></span></p>
+            </div>
+            <p id="credit"><em>*Weather data source: www.openweathermap.org</em></p>
+        </section>
+
+        <section id="news">
+            <h2>News Release</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam aliquam harum distinctio dolorum similique tempora, repellat, error placeat culpa veniam minima! Aliquam facere quia necessitatibus, ut enim voluptates similique expedita.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, dicta sit ea totam neque voluptatem, eaque amet perspiciatis aspernatur quam impedit magni obcaecati vitae itaque, saepe alias? Quisquam, ut quaerat.
+        </p>
+        </section>
+
+        <div id="spotlights">
+        <section id="spotlight1">
+            <h2 class="spotName"></h2>
+            <div class="spotlightDiv"><img class="spotIcon"  alt="spotlight logo" width="150"></div>
+            <em><p class="spotAddress"></p></em>
+            <p><span class="spotPhone">+899-434-32-56</span> | <span class="spotWebsite">www.sunrise.com/edu</span></p>
+        </section>
+
+        <section id="spotlight2">
+            <h2 class="spotName"></h2>
+            <div class="spotlightDiv"><img class="spotIcon"  alt="spotlight logo" width="150"></div>
+            <em><p class="spotAddress"></p></em>
+            <p><span class="spotPhone">+899-434-32-56</span> | <span class="spotWebsite">www.sunrise.com/gov</span></p>
+        </section>
+
+        <section id="spotlight3">
+            <h2 class="spotName"></h2>
+            <div class="spotlightDiv"><img class="spotIcon"  alt="spotlight logo" width="200"></div>
+            <em><p class="spotAddress"></p></em>
+            <p><span class="spotPhone">+899-434-32-56</span> | <span class="spotWebsite">www.sunrise.com/network</span></p>
+        </section>
+    </div>
+
+        <section id="join">
+            <a href="join.html" target="_blank"><button>Join Us!</button></a>
+            <p>Discover how to join the chamber of commerce and how it will benefit your organization</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="grid">
+            <div class="left">
+        <div>
+            <a href="index.html"><img
+            src="images/logo.webp"
+            alt="Logo image"
+            width="150"> </a>
+        </div>
+        
+        <h3>
+            Sunrise Chamber of Commerce
+        </h3>
+        <p>
+            288 South Bishop Circle<br>
+            Irmo, SC 29063
+        </p>
+        </div>
+        <div class="right">
+        <p>
+            info@srcoc.org
+        </p>
+        <p>
+            +(323) 3060-4557
+        </p>
+        <p>
+            <a class= "map" href="https://www.google.com/maps/place/Bishop+Cir,+Penn+Forest+Township,+PA+18210/@40.999076,-75.579218,12z/data=!4m5!3m4!1s0x89c456322b287ccd:0xbc7ad957aabd8924!8m2!3d40.9990764!4d-75.5792177?hl=en" target="_blank">
+                Location Map &#x1F4CC;</a>
+        </p>
+        </div>
+        </div>
+        
+        <div class="small">
+            &copy;<span id="year"></span> Sunrise Chamber <br> Alexander Karasik <br>
+            WDD 230 Project <br>
+            <div id="updates">
+                Last Updated: <span id="lastupdate"></span> <span id="time"></span>
+              </div>
+          </div>
+
+      <div class="medium">
+        &copy;<span id="year"></span> Sunrise Chamber | Alexander Karasik |
+        WDD 230 Project |<br>
+        <div id="updates">
+            Last Updated: <span id="lastupdate1"></span> <span id="time1"></span>
+      </div>
+      </div>
+
+      <div class="large">
+        &copy;<span id="year"></span> Sunrise Chamber | Alexander Karasik |
+        WDD 230 Project | 
+        <span id="updates">
+            Last Updated: <span id="lastupdate2"></span> <span id="time2"></span>
+        </span>
+      </div>
+   
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlights.js"></script>
+  </body>
+  </html>

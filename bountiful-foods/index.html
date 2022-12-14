@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Home Page Build in WDD 230</title>
+    <meta
+      name="description"
+      content="Chamber Home Page Build in WDD 230">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel = "shortcut icon" href = "images/favicon1.ico">
+  </head>
+
+  <body class="body_home">
+    <div id="bannertemp">
+        <p>Number of drinks ordered: <span class="num_drinks"></span></p>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img
+              src="images/logo.png"
+              alt="Logo image"
+              width="150" 
+            ></a>  
+          </div>
+          <p class="logoaddress">&#9743; (467) 234-54-64 <br> 272 Madeline Highway, Carlsbad </p>
+          <!-- <div class="icon"><a href="http://www.facebook.com" target="_blank"><img src="images/facebook_icon.png" alt="Facebook icon" width="30"></a></div>
+    <div class="twitter_icon"><a href="http://www.twitter.com" target="_blank"><img src="images/twitter_icon.png" alt="Twitter icon" width="30"></a></div> -->
+    
+    <!-- NAVIGATION HERE -->
+    <nav>
+        <button id="hamburgerBtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul id="primaryNav">
+            <li class="active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="join"><a class="nav-link" href="fresh.html">Fresh</a></li>
+            <li><a class="nav-link" href="about.html">About Us</a></li>              
+        </ul> 
+    </nav>
+    <p class="logoaddress1">&#9743; (467) 234-54-64 &nbsp;| &nbsp;272 Madeline Highway, Carlsbad </p>
+
+    </header>
+
+    <div id="banner">
+        <img src="images/banner.webp" width="100%" alt="Banner image"> 
+        <!-- <div id="info">
+         <h2>Sunrise Chamber of Commerce</h2>
+         <p id="today"></p> -->
+        </div>
+     </div>
+
+    <!-- MAIN GOES HERE -->
+    <main class="home">
+     <h1 id="heading_one">Carlsbad Area</h1>
+     <div class="myphoto" id="picture_one">
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/coast.webp">
+            <img src= "https://dummyimage.com/600x400/e0e1e3/fffaff.png&text=++PLACEHOLDER" data-src="images/coast.webp" alt="coast image">
+          </picture>
+     </div>
+        <p id="par_one">The South Coast is a region of California, making up roughly 
+            the southernmost third of the Californian coast. It refers,
+             for the most part, to the coastal parts of the Southern 
+             Californian counties of Ventura, Los Angeles, Orange, and
+              San Diego. It is characterized by a cosmopolitan "SoCal"
+               atmosphere, even the term "Southern California" sometimes
+                referring to this specific more populated and visited 
+                zone, and location of major urban coastal centers.
+            </p>
+      
+    <h1 class="heading2" id="heading_two">
+        Taste Your Curiosity 
+    </h1>
+    <div class="myphoto" id="picture_two">
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/drink.jpg">
+            <img src= "https://dummyimage.com/600x400/e0e1e3/fffaff.png&text=++PLACEHOLDER" data-src="images/drink.jpg" alt="drink image">
+          </picture>
+     </div>
+     <p id="par_two">
+         Love fruits? It's the perfect time to indulge
+         and make the most of nature's sweet offerings by ordering
+          spectacular juices at Bountiful Foods. It's summer and there is no 
+          better way to beat the heat and stay hydrated than juicing
+           up. Loaded with essential minerals and fiber, fruits 
+           can work wonders to energise and refresh you in the 
+           scorching heat. 
+
+     <div id="homeButton">
+     <a href="fresh.html" target="_blank"><button>Get Your Juice!</button></a>
+        </div>
+
+    <!-- WEATHER -->
+    <h1 class="headingThree">
+        Weather
+    </h1>
+    <p id="par_three">The climate of Carlsbad is mild to hot 
+        year-round, and mostly dry. It is classified as 
+        a Mediterranean climate, which is a type of dry
+         subtropical climate. It is characterized by 
+         seasonal changes in rainfall—with a dry summer
+          and a winter rainy season. Under the modified 
+          Köppen climate classification, the coastal a
+          reas are classified as Csb, and the inland areas as Csa.
+
+        The Carlsbad area contains microclimates, where daytime
+         temperatures can vary as much as 36 °F (20 °C) 
+         between inland areas such as the San Fernando 
+         Valley or San Gabriel Valley, and the coastal 
+         Los Angeles Basin. Carlsbad 
+          frequently receives snow in the winter due to 
+          the altitude of approximately 2,500 feet (760 m)
+          , while its summers are hotter than the rest of 
+          the county.</p>
+
+    <section id="weather">
+        <div class="temp"><img alt="weather logo" width="120">
+        <p id="weatherTemp"></p></div>
+        <p id="cloudy"></p>
+        <div class="weatherGrid">
+            <p >Humidity:</p>
+            <p><span id="windspeed">km/h</p> 
+        </div>
+        <p id="forecastheading">3 Days Forecast<br>(day/night):</p>
+        <p class="forecast">
+            <span class="dayonedate"></span><span class="dayone">1</span><br>
+            <span class="daytwodate"></span><span class="daytwo">2</span><br>
+            <span class="daythreedate"></span><span class="daythree">3</span>
+        </p>
+        <p id="credit"><em>*Weather data source: www.openweathermap.org</em></p>
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="grid">
+            <div class="left">
+        <div class="footImg">
+            <a href="index.html"><img
+            src="images/logo.png"
+            alt="Logo image"
+            width="150"> </a>
+        </div>
+        
+        <h3>
+            Bountiful Foods
+        </h3>
+        <p>
+            272 Madeline Highway<br>
+            Carlsbad, CA 29063
+        </p>
+        </div>
+        <div class="right">
+        <div class="social">
+            <p class="f_icon"><a href="http://www.facebook.com" target="_blank"><img src="images/facebook_icon.png" alt="Facebook icon" width="30"></a></p>
+    <p class="t_icon"><a href="http://www.twitter.com" target="_blank"><img src="images/twitter_icon.png" alt="Twitter icon" width="30"></a></p>
+    <p class="y_icon"><a href="http://www.youtube.com" target="_blank"><img src="images/icon2.png" alt="Youtube icon" width="30"></a></p>
+
+        </div>
+        <p>
+            (467) 234-54-64
+        </p>
+        <p>
+            <a class= "map" href="https://www.google.com/maps/place/Bishop+Cir,+Penn+Forest+Township,+PA+18210/@40.999076,-75.579218,12z/data=!4m5!3m4!1s0x89c456322b287ccd:0xbc7ad957aabd8924!8m2!3d40.9990764!4d-75.5792177?hl=en" target="_blank">
+                Location Map &#x1F4CC;</a>
+        </p>
+        </div>
+        </div>
+        
+        <div class="small">
+            &copy;<span id="year"></span> Bountiful Foods <br> Alexander Karasik <br>
+            WDD 230 Project <br>
+            <div id="updates">
+                Last Updated: <span id="lastupdate"></span> <span id="time"></span>
+              </div>
+          </div>
+
+      <div class="medium">
+        &copy;<span id="year"></span> Bountiful Foods | Alexander Karasik |
+        WDD 230 Project |<br>
+        <div id="updates">
+            Last Updated: <span id="lastupdate1"></span> <span id="time1"></span>
+      </div>
+      </div>
+
+      <div class="large">
+        &copy;<span id="year"></span> Bountiful Foods | Alexander Karasik |
+        WDD 230 Project | 
+        <span id="updates">
+            Last Updated: <span id="lastupdate2"></span> <span id="time2"></span>
+        </span>
+      </div>
+   
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/weather.js"></script>
+  </body>
+  </html>

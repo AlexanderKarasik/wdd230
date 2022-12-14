@@ -1,0 +1,77 @@
+{
+    "companies": [
+      {
+        "name": "Boulevard Brewing",
+        "address": "534 Bechtelar Crest, Sunrise, 96019",
+        "phone": "(530) 275-4140",
+        "website": "www.boulevardbrewing.com",
+        "icon": "./images/directory/boulevard.png",
+        "level": "Bronze"
+      },
+      {
+        "name": "Care Credit",
+        "address": "4778 Orkney Pl, Sunrise, 96019",
+        "phone": "(207) 774-6884",
+        "website": "www.carecredit.com",
+        "icon": "./images/directory/carecredit.png",
+        "level": "Gold"
+      },
+      {
+        "name": "CMA CGM",
+        "address": "4118 165th St, Sunrise, 96019",
+        "phone": "(310) 370-3228",
+        "website": "www.cma.com",
+        "icon": "./images/directory/cma.png",
+        "level": "Gold"
+      },
+      {
+        "name": "Erste Bank",
+        "address": "45620 Jeronimo St, Sunrise, 96019",
+        "phone": "(951) 699-2321",
+        "website": "www.erste.com",
+        "icon": "./images/directory/erste.png",
+        "level": "Silver"
+      },
+      {
+        "name": "Lux Express",
+        "address": "4557 De Silva St, Sunrise, 96019",
+        "phone": "(208) 734-9611",
+        "website": "www.luxexpress.com",
+        "icon": "./images/directory/lux.png",
+        "level": "Silver"
+      },
+      {
+        "name": "Bombas",
+        "address": "1337 N San Joaquin St, Sunrise, 96019",
+        "phone": "(208) 726-8729",
+        "website": "www.bombas.com",
+        "icon": "./images/directory/mckinsey.png",
+        "level": "Silver"
+      },
+      {
+        "name": "Origo",
+        "address": "478 Kings Rd, Sunrise, 96019",
+        "phone": "(415) 467-3419",
+        "website": "www.origo.com",
+        "icon": "./images/directory/origo.png",
+        "level": "Gold"
+      },
+      {
+        "name": "PBS Management",
+        "address": "Po Box 3086, Sunrise, 96019",
+        "phone": "(206) 463-5153",
+        "website": "www.pbs.com",
+        "icon": "./images/directory/pbs.png",
+        "level": "Gold"
+      },
+      {
+        "name": "Total Spectrum",
+        "address": "478 Eagle Lake Rd, Sunrise, 96019",
+        "phone": "(530) 257-0914",
+        "website": "www.totalspectrum.com",
+        "icon": "./images/directory/totalspectrum.png",
+        "level": "Silver"
+      }
+    ]
+}
+      
