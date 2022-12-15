@@ -15,10 +15,7 @@
     <link rel = "shortcut icon" href = "images/favicon1.ico">
   </head>
 
-  <body class="body_home">
-    <div id="bannertemp">
-        <p>Number of drinks ordered: <span class="num_drinks"></span></p>
-    </div>
+  <body id="body_fresh">
     <header>
         <div class="logo">
             <a href="index.html"><img
@@ -49,7 +46,7 @@
     </header>
 
     <div id="banner">
-        <img src="images/banner.webp" width="100%" alt="Banner image"> 
+        <img src="images/banner.webp" alt="Banner image"> 
         <!-- <div id="info">
          <h2>Sunrise Chamber of Commerce</h2>
          <p id="today"></p> -->
@@ -57,13 +54,55 @@
      </div>
 
     <!-- MAIN GOES HERE -->
-   <main>
+   <main id="fresh">
+    <div id="contactform">
+        <h1 class="hr-lines" id="hr1">Compose Yourself Mix! </h1>
+        <form>
+            
+            <fieldset>
+                <label class="top">&nbsp;&nbsp;First name<span class="red">*</span> <input type="text" name="fname" id="fname" required></label>
+                <label class="top">&nbsp;&nbsp;Last name<span class="red">*</span><input type="text" name="lname" id="lname" required></label>
+                <label class="top">&nbsp;&nbsp;Email<span class="red">*</span> <input type="email" name="email" placeholder="example@gmail.com" id="email" required></label>
+                <label class="top">&nbsp;&nbsp;Phone <input type="tel" name="phone" placeholder="1235551234" id="phone"></label> 
+                <label class="top" required>&nbsp;&nbsp;Ingredient 1 <span class="red">*</span>
+            <select id="ingredient_one" class="top" required>
+                <option value="">Please Select &#9662</option>
+            </select>
+            </label>
+            <label class="top" required>&nbsp;&nbsp;Ingredient 2 <span class="red">*</span>
+                <select id="ingredient_two" class="top" required>
+                    <option value="">Please Select &#9662</option>     
+                </select>
+                </label>
+                <label class="top" required>&nbsp;&nbsp;Ingredient 3 <span class="red">*</span>
+                    <select id="ingredient_three" class="top" required>
+                        <option value="">Please Select &#9662</option>
+                    </select>
+                    </label>
+                <label class="top" id="description">&nbsp;&nbsp;<span class ="tooltip">&nbsp;Message<span class="blue">&nbsp;&#9432;</span><span class="tooltiptext">Additional info</span></span><br> <textarea name="description" rows="8" id="description1" ></textarea></label>
+                <input  value="Get Your Mix" class="submitBtn" onclick="getInfo()">   
+            </fieldset>
+            </form>
+            </div> 
 
-    
+<div id="userInfo">
+<p>Your information is as follows:</p>
+        <p>
+        Submission time: <span id="joinTime">Example time</span><br>
+        First name: <span id="joinFname"></span><br>
+        Email: <span id="joinEmail"></span><br>
+        Phone number: <span id="joinPhone"></span><br>
+        Fruit 1: <span id="fruit1"></span><br>
+        Fruit 2: <span id="fruit2"></span><br>
+        Fruit 3: <span id="fruit3"></span><br>
+        Special info: <span id="joinDescription"></span><br>
+        </p>
+</div>
+
    </main>
 
-
-    <footer>
+<!-- FOOTER -->
+    <footer id="footer_fresh">
         <div class="grid">
             <div class="left">
         <div class="footImg">
@@ -124,7 +163,7 @@
    
     </footer>
     <script src="scripts/scripts.js"></script>
-    <script src="scripts/lazyload.js"></script>
-    <script src="scripts/weather.js"></script>
+    <script src="scripts/fruits.js"></script>
+    <script src="scripts/thankyou.js"></script>
   </body>
   </html>

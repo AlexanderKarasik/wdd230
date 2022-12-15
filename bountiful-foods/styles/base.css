@@ -9,7 +9,6 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 
 body,nav,header, footer, main{
-    background-color: white;
     margin-top: .9rem;
     font-family: 'Lato', sans-serif;
     background-color: #D8583B;
@@ -267,9 +266,17 @@ footer .map:hover{
   padding-top: 6px;
 }
 
+h1{
+    color:#3fe7c0
+}
+
 .home h1.heading2{
     width: 280px;
     margin-top: 30px;
+}
+
+#banner img{
+    width:100%;
 }
 
 /* BUTTON */
@@ -383,25 +390,20 @@ footer .map:hover{
 
 #credit{
     font-size: 16px;
-    /* margin-top: 40px; */
 }
 
 
 
-/* TEMPORAL BANNER */
+/* NUMBER ORDERS */
 #bannertemp{
     text-align: center;
     background-color: rgba(54, 162, 55, 0.8);
     color:#eee;
     padding: 0.001rem;
-    margin:-15px auto 0 auto;
+    margin:-15px auto 10px auto;
     /* font-size: 18px; */
     font-weight: 400;
 }
-
-/* #bannertemp{
-    display:none;
-} */
 
 /* INPUT & BUTTON */
 input, #windspeed{
@@ -409,7 +411,175 @@ input, #windspeed{
     text-align: center;
 }
 
+/* FRESH PAGE */
+/* -----------FORM---------------*/
 
+#body_fresh{
+    background-color: #fff;
+
+}
+
+main#fresh{
+    padding:5px 15px 10px 15px;
+    margin: -34px 0 -20px 0;
+}
+
+form fieldset{
+    margin: 1rem 0;
+    border: 1px solid #cad5fa;
+    border-radius: 10px;
+    padding: .5rem 2% 0 2%;
+    background-color:#e8dc71;
+    max-width: 600px;
+    margin: 0 auto 30px auto;   
+}
+
+
+
+form label.top, form div{
+    display:block;
+    padding-top: 1rem;
+    color: #222;
+    font-size: .8rem;
+    /* font-weight: 400; */
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px rgb(192, 192, 192);
+    border-radius: 4px;
+    padding: .75rem;
+    color: #333;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+    margin-top: .2rem ;
+    background-color: #fff;
+}
+
+form input.submitBtn{
+    border:none;
+    background-color: rgb(61, 145, 61);;
+    color:white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 20px 0 35px 2%;
+    width: 96%;
+    max-width: 20rem;
+    border: 2px solid rgb(73, 138, 73);
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+form input.submitBtn:hover{
+    transform: scale(1.03);
+}
+
+form label.top input:required{
+    border-left: red solid 4px;
+    background-color: white;
+}
+
+form label.top select:required{
+    border-left: red solid 4px;
+    background-color: white;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 4px;
+    background-color: white;
+}
+
+form label.top select:required:valid {
+    border-left: green solid 4px;
+    background-color: white;
+}
+
+main#joinpage{
+    display:block;
+    margin: 0 0.5rem -15px 0.5rem;
+}
+
+#description textarea{
+    width: 100%;
+    max-width: 35rem;
+    border-radius: 4px;
+    border: solid 1px rgb(192, 192, 192);
+    margin-top:0.2rem;
+    font-size: 18px;
+    color:#333
+}
+
+.red{
+    color:#9c2c13;
+    font-size: 14px;
+}
+
+.blue{
+    color: rgb(57, 57, 251);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+
+/* --------TOOLTIP--------- */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: rgb(80,80,80);
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(80,80,80);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+     opacity: 0;
+    transition: opacity 1s;
+    font-size: 14px;
+
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(80,80,80) transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #contactform h1{
+    text-align: center;
+    margin: 35px auto 10px auto;
+  }
+
+  #userInfo{
+    display: none;
+  }
+  
+
+  
+  
 
 
 

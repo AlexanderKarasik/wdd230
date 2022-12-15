@@ -66,11 +66,12 @@ try {
 
 // -----JOIN PAGE HIDDEN INPUT-----
 
-let joinDate;
-function getDate(){
-document.getElementById("date").value = new Date();
-}
+// let joinDate;
+// function getDate(){
+// document.getElementById("joinTime").value = new Date();
+// }
 
+document.querySelector(".num_drinks").innerHTML = (window.localStorage.getItem("numDrinks"));
 
 
 

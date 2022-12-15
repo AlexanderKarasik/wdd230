@@ -119,5 +119,10 @@ main.home{
     margin: 0 auto 20px auto;
 }
 
+/* MAIN FRESH */
+main#fresh{
+    margin-top: -28px;
+}
+
 }
 
