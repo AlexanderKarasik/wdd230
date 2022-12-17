@@ -25,7 +25,7 @@ const options = {
   time: "numeric",
 };
 
-document.getElementById("lastupdate").innerHTML = lastmodif.toLocaleDateString(
+document.getElementById("lastupdate_one").innerHTML = lastmodif.toLocaleDateString(
   "en-US",
   options
 );
@@ -48,21 +48,21 @@ document.getElementById("time2").innerHTML =
 
 // Day today with week day name
 
-const date1 = document.querySelector("#today");
-try {
-  const options = {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  };
-  date1.innerHTML = `<span class="highlight">${new Date().toLocaleDateString(
-    "en-UK",
-    options
-  )}</span>`;
-} catch (e) {
-  alert("Error with code or your browser does not support Locale");
-} 
+// const date1 = document.querySelector("#today");
+// try {
+//   const options = {
+//     weekday: "long",
+//     day: "numeric",
+//     month: "long",
+//     year: "numeric",
+//   };
+//   date1.innerHTML = `<span class="highlight">${new Date().toLocaleDateString(
+//     "en-UK",
+//     options
+//   )}</span>`;
+// } catch (e) {
+//   alert("Error with code or your browser does not support Locale");
+// } 
 
 // -----JOIN PAGE HIDDEN INPUT-----
 
