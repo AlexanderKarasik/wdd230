@@ -124,5 +124,46 @@ main#fresh{
     margin-top: -28px;
 }
 
+/* ABOUT US */
+.contactflex{
+    display: flex;
+    color:#555;
+}
+
+.contactflex div:nth-child(1){
+    background-color: rgb(237, 237, 237);
+    margin-top: 25px;
+    margin-bottom:9px;
+    margin-right: -15px;
+    padding: 1rem;
+    border-radius: 10px 0 0 10px;
+}
+
+.iframe{
+    width:100%;
+    margin-left:15px;
+    margin-top:25px;
+}
+
+iframe{
+    height:227px;
+    border-radius: 0 10px 10px 0;
+}
+
+main#about{
+    width:80%;
+    margin: 0 auto;
+}
+
+#about h1#visit_us{
+    margin-bottom: 0;
+}
+
+#fresh h1{
+    width:280px;
+    padding-bottom: 48px;
+    padding-top: 3px;
+}
+
 }
 

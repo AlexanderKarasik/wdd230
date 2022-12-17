@@ -16,9 +16,6 @@
   </head>
 
   <body class="body_home">
-    <div id="bannertemp">
-        <p>Number of drinks ordered: <span class="num_drinks"></span></p>
-    </div>
     <header>
         <div class="logo">
             <a href="index.html"><img
@@ -50,15 +47,44 @@
 
     <div id="banner">
         <img src="images/banner.webp" width="100%" alt="Banner image"> 
-        <!-- <div id="info">
-         <h2>Sunrise Chamber of Commerce</h2>
-         <p id="today"></p> -->
         </div>
      </div>
 
     <!-- MAIN GOES HERE -->
-   <main>
+   <main id="about">
+    <h1 id="heading_about">Our History</h1>
+    <div class="myphoto" id="picture_about">
+       <picture>
+           <source media="(max-width: 500px)" srcset="images/about.jpg">
+           <img src= "https://dummyimage.com/600x400/e0e1e3/fffaff.png&text=++PLACEHOLDER" data-src="images/about.jpg" alt="fruits image">
+         </picture>
+    </div>
+       <p id="par_about">Bountiful Foods can look back on more than 80 years
+         of history that made it the global company it is today.
+          Everything began in 1938 in a place called Carlsbad in 
+          South Coast of California, with the production of fruits and fruit juices 
+          and the trade of dessert fruits from California Region.
 
+        Today, the corporate headquarters of the group remains in this 
+        humble hometown so that it can continue to develop expert 
+        knowledge in the most important business areas: beverage compounds,
+         flavours, and fruit juice.
+           </p>
+        
+           <h1 id="visit_us">Visit Us</h1>
+           <div class="contactflex">
+            <div><p>39 Nashua Rd<br>
+             Carlsbad, CA 29063</p> 
+             <p>
+                 Monday – Friday: 9:00 a.m. to 6:00 p.m.  
+             </p>
+             </div>
+             <div class="iframe">
+                <iframe width="800" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=800&amp;height=400&amp;hl=en&amp;q=%20Carlsbad%20California+(Carlsbad%20California)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+
+            </div>
+             </div>
+             
     
    </main>
 
@@ -125,6 +151,5 @@
     </footer>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/lazyload.js"></script>
-    <script src="scripts/weather.js"></script>
   </body>
   </html>
