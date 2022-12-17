@@ -76,8 +76,6 @@ speed.innerHTML = `${weatherData.main.humidity} %`;
     document.querySelector('.dayonedate').innerHTML = `${((weatherData.list[8].dt_txt)).slice(0,10)}: &nbsp&nbsp  `;
     document.querySelector('.daytwodate').innerHTML = `${((weatherData.list[16].dt_txt)).slice(0,10)}: &nbsp&nbsp  `;
     document.querySelector('.daythreedate').innerHTML = `${((weatherData.list[24].dt_txt)).slice(0,10)}: &nbsp&nbsp  `;
-
-
-    // WIND SPEED
-    // speed.innerHTML = `${weatherData.main.humidity} %`;
       }
+
+    document.querySelector(".num_drinks").innerHTML = (window.localStorage.getItem("numDrinks"));

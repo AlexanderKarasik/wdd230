@@ -424,9 +424,9 @@ main#fresh{
     margin: -34px 0 -20px 0;
 }
 
-form fieldset{
+form fieldset, #userInfo{
     margin: 1rem 0;
-    border: 1px solid #cad5fa;
+    border: 1px solid #9ba04f;
     border-radius: 10px;
     padding: .5rem 2% 0 2%;
     background-color:#e8dc71;
@@ -434,7 +434,14 @@ form fieldset{
     margin: 0 auto 30px auto;   
 }
 
-
+#userInfo{
+    color:#555;
+    padding:0 0 20px 20px;
+    background-color: #c5e592;
+    margin-bottom: 25px;
+    z-index: 1;
+    opacity: 1;
+}
 
 form label.top, form div{
     display:block;
@@ -445,7 +452,7 @@ form label.top, form div{
 }
 
 form label.top input, form label.top select {
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     display: block;
     font-size: 1rem;
     border: solid 1px rgb(192, 192, 192);
@@ -576,7 +583,17 @@ main#joinpage{
   #userInfo{
     display: none;
   }
-  
+
+  #userInfo button{
+    padding: 0.3rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color:#fff;
+    border: 1px solid rgb(52, 129, 28);
+    background-color: rgb(61, 145, 61);
+    cursor:pointer;
+  }
+
 
   
   

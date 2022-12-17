@@ -6,7 +6,7 @@ async function apiFetch() {
       const response = await fetch(url);
       if (response.ok) {
         const fruits = await response.json();
-        console.log(fruits); // this is for testing the call
+        // console.log(fruits); // this is for testing the call
         fruits.forEach(addFruits);
       } else {
           throw Error(await response.text());

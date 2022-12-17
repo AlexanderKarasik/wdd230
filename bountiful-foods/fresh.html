@@ -56,14 +56,13 @@
     <!-- MAIN GOES HERE -->
    <main id="fresh">
     <div id="contactform">
-        <h1 class="hr-lines" id="hr1">Compose Yourself Mix! </h1>
+        <h1 class="hr-lines" id="hr1">Compose Your Mix! </h1>
         <form>
             
             <fieldset>
                 <label class="top">&nbsp;&nbsp;First name<span class="red">*</span> <input type="text" name="fname" id="fname" required></label>
-                <label class="top">&nbsp;&nbsp;Last name<span class="red">*</span><input type="text" name="lname" id="lname" required></label>
                 <label class="top">&nbsp;&nbsp;Email<span class="red">*</span> <input type="email" name="email" placeholder="example@gmail.com" id="email" required></label>
-                <label class="top">&nbsp;&nbsp;Phone <input type="tel" name="phone" placeholder="1235551234" id="phone"></label> 
+                <label class="top">&nbsp;&nbsp;Phone<span class="red">*</span> <input type="tel" name="phone" placeholder="1235551234" id="phone" required></label> 
                 <label class="top" required>&nbsp;&nbsp;Ingredient 1 <span class="red">*</span>
             <select id="ingredient_one" class="top" required>
                 <option value="">Please Select &#9662</option>
@@ -86,7 +85,8 @@
             </div> 
 
 <div id="userInfo">
-<p>Your information is as follows:</p>
+    <p>Thank you!</p>
+<p>Order details:</p>
         <p>
         Submission time: <span id="joinTime">Example time</span><br>
         First name: <span id="joinFname"></span><br>
@@ -96,7 +96,13 @@
         Fruit 2: <span id="fruit2"></span><br>
         Fruit 3: <span id="fruit3"></span><br>
         Special info: <span id="joinDescription"></span><br>
+        Carbohydrates total: <span id="carbo"></span><br>
+        Protein total: <span id="protein"></span><br>
+        Fat total: <span id="fat"></span><br>
+        Sugar total: <span id="sugar"></span><br>
+        Calories total: <span id="calories"></span>
         </p>
+        <button onclick = dismiss()>Ok</button>
 </div>
 
    </main>

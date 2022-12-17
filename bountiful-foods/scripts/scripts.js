@@ -71,7 +71,6 @@ try {
 // document.getElementById("joinTime").value = new Date();
 // }
 
-document.querySelector(".num_drinks").innerHTML = (window.localStorage.getItem("numDrinks"));
 
 
 
