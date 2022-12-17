@@ -25,10 +25,10 @@ const options = {
   time: "numeric",
 };
 
-document.getElementById("lastupdate_one").innerHTML = lastmodif.toLocaleDateString(
-  "en-US",
-  options
-);
+// document.getElementById("lastupdate_one").innerHTML = lastmodif.toLocaleDateString(
+//   "en-US",
+//   options
+// );
 document.getElementById("time").innerHTML =
   lastmodif.toLocaleTimeString("en-US");
 

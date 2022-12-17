@@ -138,12 +138,27 @@ async function apiFetch() {
     document.querySelector('#sugar').innerHTML = total_sugar.toFixed(2);
  }
 //  console.log(total_carbo)
-
    }
    
 
 function dismiss(){
     document.querySelector("#userInfo").style.display = 'none';
 }
+
+function clear(){
+    document.getElementById("fname").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("ingredient_one").value = "";
+    document.getElementById("ingredient_two").value = "";
+    document.getElementById("ingredient_three").value = "";
+    document.getElementById("description1").value = "";
+    
+}
    
+let submitBtn = document.querySelector('.submitBtn');
+submitBtn.addEventListener('click', getInfo);
+submitBtn.addEventListener('click', clear);
+
+document.getElementById('fname').addEventListener('click', dismiss)
    
