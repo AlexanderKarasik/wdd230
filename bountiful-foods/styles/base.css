@@ -247,7 +247,7 @@ footer .map:hover{
 .myphoto{
     /* width:90%; */
     padding: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     border: 1px solid #ccc; 
     box-shadow: 9px 9px 9px #e0e0e0; 
     /* margin:0 auto; */

@@ -1,4 +1,4 @@
-let numDrinks=0;
+let numDrinks=Number(window.localStorage.getItem("numDrinks"));
 
 function getInfo(){
     let fname = document.getElementById("fname").value;
@@ -30,7 +30,8 @@ function getInfo(){
 
    if (fruit_one != "" && fruit_two != "" && fruit_three != "" && fname != "N/A" && 
    email != "N/A" && phone != "N/A"){ 
-   numDrinks = numDrinks+1;
+   
+    numDrinks = numDrinks+1;
 //    console.log(numDrinks)
    localStorage.setItem("numDrinks", numDrinks);
 
@@ -160,5 +161,5 @@ let submitBtn = document.querySelector('.submitBtn');
 submitBtn.addEventListener('click', getInfo);
 submitBtn.addEventListener('click', clear);
 
-document.getElementById('fname').addEventListener('click', dismiss)
+document.getElementById('fname').addEventListener('click', dismiss);
    

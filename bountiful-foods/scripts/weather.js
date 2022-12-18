@@ -78,4 +78,12 @@ speed.innerHTML = `${weatherData.main.humidity} %`;
     document.querySelector('.daythreedate').innerHTML = `${((weatherData.list[24].dt_txt)).slice(0,10)}: &nbsp&nbsp  `;
       }
 
-    document.querySelector(".num_drinks").innerHTML = (window.localStorage.getItem("numDrinks"));
+      // NUMBER DRINKS ORDERED
+      let number_drinks= (window.localStorage.getItem("numDrinks"));
+      console.log(number_drinks);
+      if (number_drinks === null){
+        number_drinks='0';
+      }
+
+    document.querySelector(".num_drinks").innerHTML = number_drinks;
+
